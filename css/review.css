@@ -1,0 +1,137 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+
+@font-face {
+    font-family: 'KoPubDotum';
+    src: url('../fonts/KoPubDotumBold.eot'),
+         url('../fonts/KoPubDotumBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KoPubDotumBold.woff') format('woff'),
+         url('../fonts/KoPubDotumBold.ttf') format('truetype'),
+         url('KoPubDotumBold.svg#KoPubDotumBold') format('svg');
+    font-weight:700;
+    font-style:normal;
+  }
+  
+  @font-face {
+    font-family: 'KoPubDotum';
+    src: url('../fonts/KoPubDotumMedium.eot'),
+         url('../fonts/KoPubDotumMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KoPubDotumMedium.woff') format('woff'),
+         url('../fonts/KoPubDotumMedium.ttf') format('truetype'),
+         url('KoPubDotumMedium.svg#KoPubDotumMedium') format('svg');
+    font-weight:500;
+    font-style:normal;
+  }
+  
+  @font-face {
+    font-family: 'KoPubDotum';
+    src: url('../fonts/KoPubDotumLight.eot'),
+         url('../fonts/KoPubDotumLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KoPubDotumLight.woff') format('woff'),
+         url('../fonts/KoPubDotumLight.ttf') format('truetype'),
+         url('KoPubDotumLight.svg#KoPubDotumLight') format('svg');
+    font-weight:300;
+    font-style:normal;
+  }
+
+html,body{
+    width:100%;
+    height: 100%;
+    font-family:'KoPubDotum';
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+ul,li{list-style:none;}
+/*--------------------header------------------- */
+
+header{width:100%;background-color:black;}
+header .nav{position:fixed;z-index:3;width:90%;padding:2.5% 5% 2.5% 5%;background-color:#e8e8e8;}
+header .nav #home{float:left;width:15%;}
+header .nav #home img{width:52px;height:52px;}
+
+.nav #search{width:70%;display:inline-block;}
+.nav #search ul{width:100%;display:inline-block;}
+.nav #search ul li{float:left;display:inline-block;}
+.nav #search ul #search_t{width:90%;}
+.nav #search ul #search_i{float:right;}
+.nav #search ul li span{}
+.nav #search ul li #search_text{
+    width:100%;
+    /* width:520px; */
+    height:40px;
+    /* margin-right:20px; */
+    border:0px solid #fff;
+    border-radius:20px 20px 20px 20px;
+    box-shadow:5px 5px 5px #c0c0c0 inset;
+    outline:none;margin-top:5px;
+}
+.nav #search ul li #search_img{width:42px;height:42px;margin-top:5px;}
+
+
+.nav #menu{display:inline-block;float: right;
+    /* float:right; */
+    /* margin-left:220px; */
+}
+.hamburger{}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.bar{
+    display: block;margin-left: auto;margin-right: auto;margin-top: 34px;
+    font-size: 0; color: transparent; text-indent: -9999px;
+    display: block; width:60px;height: 4px;
+    background-color: #ed6b6b;
+}
+
+/* section */
+section{width:100%;}
+#review_main{width:80%;margin-left:auto;margin-right:auto;padding-top:200px}
+#review_main h1{text-align:center;font-size:60px;}
+#review_main h2{font-size:42px;text-align:left;display:block;margin-top:80px;}
+#review_main #review_main_top{margin-top:30px;display:inline-block;width:100%;}
+.list_box{float:left;margin-right:30px;}
+#review_main #review_main_top ul{width:250px;display:inline-block;height:163px;position:relative;}
+#review_main #review_main_top ul li{}
+#review_main #review_main_top ul li:nth-of-type(2){font-size:28px;font-weight:700;padding-top:10px;}
+#review_main #review_main_top ul li:nth-of-type(3){display:inline-block;padding-right:20px;padding-top:10px;}
+#review_main #review_main_top ul li:nth-of-type(4){display:inline-block;}
+#review_main #review_main_top ul li:nth-of-type(5){display:inline-block;}
+#review_main #review_main_top ul li img{width:60px;height:40px;}
+.review_txt{color:#aeaeae;}
+.view_bt{position: absolute;bottom:0;font-size:18px;color:#fff;background-color:#ed6b6b;border-radius:20px 20px 20px 20px;padding:10px 80px;}
+#review_main #review_main_top #main_top_left{width:50%;display:inline-block;}
+#review_main #review_main_top #main_top_right{width:50%;display:inline-block;float:right;}
+
+
+/*  */
+#review_main_bottom{width:100%;margin-top:100px;min-width:1024px;position:relative;margin-bottom:100px;}
+#review_main_bottom h2{font-size:42px;text-align:left;margin-bottom:40px;display:block;}
+#review_main_bottom h6{position:absolute;right:8%;top:0;font-size:22px;}
+#review_main_bottom ul{display:inline-block;}
+#review_main_bottom .bottom_list_container{width:23%;display:inline-block;margin-bottom:60px;margin-right:1%;}
+#review_main_bottom .bottom_list_container h3{font-size:22px;color:#aeaeae;margin-bottom:20px;}
+#review_main_bottom .bottom_list_container .bottom_list{margin-right:2%;border:3px solid #ebebeb;}
+#review_main_bottom .bottom_list_container .bottom_list:nth-of-type(1){margin-left:0%;}
+#review_main_bottom .bottom_list_container .bottom_list:nth-of-type(4){margin-right:1%;margin-bottom:60px;}
+#review_main_bottom .bottom_list_container .bottom_list h3{color:#aeaeae;padding-bottom:10px;}
+#review_main_bottom .bottom_list_container ul .bottom_list_text{border:0;font-weight:700;width:210px;margin-left:auto;margin-right:auto;display:block;margin-bottom: 20px;position:relative;}
+#review_main_bottom .bottom_list_container ul .bottom_list_text li{}
+#review_main_bottom .bottom_list_container ul .bottom_list_text li span{color:#aeaeae;}
+#review_main_bottom .bottom_list_container ul .bottom_list_text li:nth-of-type(1){font-size:22px;margin-top:20px}
+#review_main_bottom .bottom_list_container ul .bottom_list_text li:nth-of-type(2){display:inline-block;margin-top:20px;}
+#review_main_bottom .bottom_list_container ul .bottom_list_text li:nth-of-type(3){display:inline-block;padding-left:10px;}
+#review_main_bottom .bottom_list_container ul .bottom_list_text li:nth-of-type(4){display:inline-block;}
+.new{border-radius:8px 8px 8px 8px;background-color:#f26c4f;padding:6px 10px;color:#fff;font-size:18px;position:absolute;bottom:30px;right:0;}
+/* .box{border:3px solid #ebebeb;} */
+
+/* media query */
+/* 키오스크 */
+@media screen and (max-width:1080px){
+    #review_main{width:96%;}
+
+    #review_main_bottom h6{right:4%;}
+}    

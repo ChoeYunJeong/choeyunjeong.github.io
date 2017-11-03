@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/reservation.css"/>
+    <!-- <link rel="stylesheet" href="./css/main.css"/> -->
+    <link rel="stylesheet" href="./css/menu.css"/>
+    <link rel="stylesheet" href="./css/icon.css"/> 
+    <!-- <link rel="stylesheet" href="./css/layerpopup.css"/> -->
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/respond.min.js"></script>
+    <title>소소한 일탈</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div id="home">
+                <a href="index.html"><img src="img/about/home_icon_pink.png"></a>
+            </div>
+            <div id="search">
+                <ul>
+                    <li id="search_t"><input type='text' id='search_text' /></li>
+                    <li id="search_i"><img src="img/search_icon.png" id="search_img"></li>
+                </ul>
+            </div>
+            <div id="menu_container">
+                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div onclick="history.back();" class="page_cover"></div>
+                <div id="menu">
+                    <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
+                    <nav>
+                        <ul>
+                            <li id="nav_alarm"><img src="img/alarm.png" class="s_icon" id="alarm"><span id="alarm_txt">프랑스 자수 클래스 3일 전입니다.</span></li>
+                            <li id="nav_name"><a href="#"><h1>조하영 님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
+                            <li><a href="#">0 포인트 0 보너스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li class="nav_title">프로젝트 소개</li>
+                            <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
+                            <li class="nav_title">취미 분석</li>
+                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li><a href="review.html">후기 게시판</a></li>
+                            <ul class="menu_icon_list_container">
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/charge.png" alt=""></li>
+                                        <li>충전하기</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
+                                        <li><a href="reservation.html">예약현황</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/customer.png" alt=""></li>
+                                        <li>고객센터</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="reservation">
+            <h1>예약현황</h1>
+            <h6>총 3개</h6>
+            <div id="reservation_listbox01">
+                <h3>- 프랑스 자수</h3>
+                <span class="progress_bt">진행중</span>
+                <div class="list_box">
+                    <ul class="list_box_it">
+                        <li class="list_img"><img src="img/list_box01.png"></li>
+                        <li class="list_text">
+                            <ul>
+                                <li><h2>프랑스 자수 배우기</h2></li>
+                                <li>가격  60,000원 부터</li>
+                                <li><span>서울특별시 영등포구 여의도동</span></li>
+                                <li><span>60km</span></li>
+                                <li>
+                                    평점
+                                    <ul class="star">
+                                        <li>
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_clear.png">
+                                            4.0
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="date"><span>날짜</span><p>11월 20일, 22일, 24일</p></div>
+                <div class="time"><span>시간</span><p>오후 5시 ~ 오후 8시</p></div>
+                <div class="txt"><span>내용</span><p>토끼 파우치 제작</p></div>
+            </div>
+            <div id="reservation_listbox02">
+                <h3>- 가죽 공예</h3>
+                <span class="progress_bt">진행중</span>
+                <div class="list_box">
+                    <ul class="list_box_it">
+                        <li class="list_img"><img src="img/list_box05.png"></li>
+                        <li class="list_text">
+                            <ul>
+                                <li><h2>가죽 공방</h2></li>
+                                <li>가격  130,000원 부터</li>
+                                <li><span>경기도 의왕시 내손동</span></li>
+                                <li><span>0.5km</span></li>
+                                <li>
+                                    평점
+                                    <ul class="star">
+                                        <li>
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_clear.png">
+                                            4.0
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="date"><span>날짜</span><p>11월 23일, 25일, 27일</p></div>
+                <div class="time"><span>시간</span><p>오후 2시 ~ 오후 5시</p></div>
+                <div class="txt"><span>내용</span><p>지퍼 카드 지갑 제작</p></div>
+            </div>
+            <div id="reservation_listbox03">
+                <h3>- 도자기 만들기</h3>
+                <span class="progress_bt">수강완료</span>
+                <div class="list_box">
+                    <ul class="list_box_it">
+                        <li class="list_img"><img src="img/list_box04.png"></li>
+                        <li class="list_text">
+                            <ul>
+                                <li><h2>도자기 만들기</h2></li>
+                                <li>가격  150,000원 부터</li>
+                                <li><span>서울특별시 영등포구 여의도동</span></li>
+                                <li><span>2km</span></li>
+                                <li>
+                                    평점
+                                    <ul class="star">
+                                        <li>
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_full.png">
+                                            <img src="img/star_clear.png">
+                                            4.0
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="date"><span>날짜</span><p>10월 16일, 18일, 20일</p></div>
+                <div class="time"><span>시간</span><p>오후 5시 ~ 오후 8시</p></div>
+                <div class="txt"><span>내용</span><p>도자기 및 그릇 제작</p></div>
+            </div>
+        </div>
+    </section>
+<script>
+$(window).ready(function(){
+    // menu
+    $(".btn").click(function() {
+        $("#menu,.page_cover,html").addClass("open");
+        window.location.hash = "#open";
+    });
+    window.onhashchange = function() {
+        if (location.hash != "#open") {
+            $("#menu,.page_cover,html").removeClass("open");
+        }
+    };
+});
+</script>
+</body>
+</html>

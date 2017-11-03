@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/layerpopup.css"/>
+    <link rel="stylesheet" href="./css/review.css"/>
+    <link rel="stylesheet" href="./css/icon.css"/>
+    <link rel="stylesheet" href="./css/menu.css"/> 
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/respond.min.js"></script>
+    <title>소소한 일탈</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div id="home">
+                <a href="index.html"><img src="img/about/home_icon_pink.png"></a>
+            </div>
+            <div id="search">
+                <ul>
+                    <li id="search_t"><input type='text' id='search_text' /></li>
+                    <li id="search_i"><img src="img/search_icon.png" id="search_img"></li>
+                </ul>
+            </div>
+            <div id="menu_container">
+                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div onclick="history.back();" class="page_cover"></div>
+                <div id="menu">
+                    <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
+                    <nav>
+                        <ul>
+                            <li id="nav_alarm"><img src="img/alarm.png" class="s_icon" id="alarm"><span id="alarm_txt">프랑스 자수 클래스 3일 전입니다.</span></li>
+                            <li id="nav_name"><a href="#"><h1>조하영 님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
+                            <li><a href="#">0 포인트 0 보너스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li class="nav_title">프로젝트 소개</li>
+                            <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
+                            <li class="nav_title">취미 분석</li>
+                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li><a href="review.html">후기 게시판</a></li>
+                            <ul class="menu_icon_list_container">
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/charge.png" alt=""></li>
+                                        <li>충전하기</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
+                                        <li><a href="reservation.html">예약현황</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/customer.png" alt=""></li>
+                                        <li>고객센터</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<section>
+    <div id="review_main">
+        <h1>REVIEW</h1>
+        <span class="bar">bar</span>
+        <h2>Best 후기</h2>        
+        <div id="review_main_top">
+            <div id="main_top_left">
+                <img src="img/list_box02.png" alt="필름카메라" class="list_box">
+                <ul>
+                    <li><img src="img/review/bestreview.png" alt="베스트리뷰 왕관"></li>
+                    <li>필름카메라 찍는 법</li>
+                    <li><span class="review_txt">작성자</span> 최윤정</li>
+                    <li><span class="review_txt">추천</span> 50</li>
+                    <li><span class="review_txt">조회</span> 106</li>
+                    <li><span class="view_bt">바로보기</span></li>
+                </ul>
+            </div>
+            <div id="main_top_right">
+                <img src="img/list_box05.png" alt="가죽공방" class="list_box">
+                <ul>
+                    <li><img src="img/review/bestreview.png" alt="베스트리뷰 왕관"></li>
+                    <li>가죽 공방</li>
+                    <li><span class="review_txt">작성자</span> 임단아</li>
+                    <li><span class="review_txt">추천</span> 34</li>
+                    <li><span class="review_txt">조회</span> 76</li>
+                    <li><span class="view_bt">바로보기</span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="review_main_bottom">
+            <h2>프리미엄 후기<h6>최신순 | 추천순 | 조회순</h6></h2> 
+            <div class="bottom_list_container">
+                <h3>NO.110</h3> 
+                <ul class="bottom_list" id="bottom_list01">                                
+                    <li><img src="img/list_box01.png" alt="프랑스 자수"></li>
+                    <li>
+                        <ul class="bottom_list_text">
+                            <li>프랑스 자수 배우기</li>
+                            <li><span>작성자</span> 조하영</li>
+                            <li><span>추천</span> 15</li>
+                            <li><span>조회</span> 21</li>
+                            <span class="new">N</span>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="layer">
+                <div class="bg"></div>
+                <div id="layer2" class="pop-layer">
+                    <div class="pop-container">
+                        <div class="pop-conts">
+                            <!--content //-->
+                            <div class="btn-r">
+                                <a href="#" class="cbtn"><img src="img/detail_page/popup_close_bt.png" alt=""></a>
+                            </div>
+                            <div class='popup_review'>
+                                <img src="img/review/popup_review.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom_list_container">   
+                <h3>NO.109</h3>                    
+                <ul class="bottom_list">
+                    <li><img src="img/list_box06.jpg" alt="프랑스 자수" width="229px" height="163px"></li>
+                    <li>
+                        <ul class="bottom_list_text">
+                            <li>꽃다발 만들기</li>
+                            <li><span>작성자</span> 박지연</li>
+                            <li><span>추천</span> 9</li>
+                            <li><span>조회</span> 11</li>
+                            <span class="new">N</span>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_list_container">     
+                <h3>NO.108</h3>
+                <ul class="bottom_list">
+                    <li><img src="img/list_box04.png" alt="프랑스 자수"></li>
+                    <li>
+                        <ul class="bottom_list_text">
+                            <li>도자기 만들기</li>
+                            <li><span>작성자</span> 조건희</li>
+                            <li><span>추천</span> 3</li>
+                            <li><span>조회</span> 20</li>
+                            <span class="new">N</span>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_list_container">    
+                <h3>NO.107</h3>                    
+                <ul class="bottom_list">
+                    <li><img src="img/list_box05.png" alt="프랑스 자수"></li>
+                    <li class="box">
+                        <ul class="bottom_list_text">
+                            <li>가죽 공방</li>
+                            <li><span>작성자</span> 김성은</li>
+                            <li><span>추천</span> 30</li>
+                            <li><span>조회</span> 50</li>
+                            <span class="new">N</span>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_list_container">  
+                <h3>NO.106</h3>                                                     
+                <ul class="bottom_list">
+                    <li><img src="img/list_box07.jpg" alt="프랑스 자수" width="229px" height="163px"></li>
+                    <li>
+                        <ul class="bottom_list_text">
+                            <li>프라모델 조립</li>
+                            <li><span>작성자</span> 심한수</li>
+                            <li><span>추천</span> 4</li>
+                            <li><span>조회</span> 21</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_list_container">  
+                <h3>NO.105</h3>                                        
+                <ul class="bottom_list">
+                    <li><img src="img/list_box01.png" alt="프랑스 자수"></li>
+                    <li>
+                        <ul class="bottom_list_text">
+                            <li>프랑스 자수</li>
+                            <li><span>작성자</span> 최윤미</li>
+                            <li><span>추천</span> 3</li>
+                            <li><span>조회</span> 3</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_list_container">     
+                <h3>NO.104</h3>
+                <ul class="bottom_list">
+                    <li><img src="img/list_box03.png" alt="프랑스 자수"></li>
+                    <li>
+                        <ul class="bottom_list_text">
+                            <li>뜨개질로 스웨터 만들기</li>
+                            <li><span>작성자</span> 이승지</li>
+                            <li><span>추천</span> 10</li>
+                            <li><span>조회</span> 30</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="bottom_list_container">      
+                <h3>NO.103</h3>                   
+                <ul class="bottom_list">
+                    <li><img src="img/list_box02.png" alt="프랑스 자수"></li>
+                    <li class="box">
+                        <ul class="bottom_list_text">
+                            <li>필름카메라로 찍는 법</li>
+                            <li><span>작성자</span> 윤샛별</li>
+                            <li><span>추천</span> 50</li>
+                            <li><span>조회</span> 95</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+</section>
+<script>
+$(window).ready(function(){
+    // menu
+    $(".btn").click(function() {
+        $("#menu,.page_cover,html").addClass("open");
+        window.location.hash = "#open";
+    });
+    window.onhashchange = function() {
+        if (location.hash != "#open") {
+            $("#menu,.page_cover,html").removeClass("open");
+        }
+    };
+
+    // layer-popup
+    $('#bottom_list01').click(function(){
+        $('section').css({'overflow':'hidden'});
+        layer_open('layer2');
+        return false;
+    })
+    function layer_open(el){
+        var temp = $('#' + el);
+        var bg = temp.prev().hasClass('bg');    //dimmed 레이어를 감지하기 위한 boolean 변수
+        var confirm2 = temp.prev().hasClass('confirm2');
+        if(bg){
+            $('.layer').fadeIn();   //'bg' 클래스가 존재하면 레이어가 나타나고 배경은 dimmed 된다.
+        }else{
+            temp.fadeIn();
+        }         
+        // 화면의 중앙에 레이어를 띄운다.
+        if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
+            else temp.css('top', '0px');
+        if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-'+temp.outerWidth()/2+'px');
+            else temp.css('left', '0px');
+
+        temp.find('a.cbtn').click(function(e){
+            $('section').css({'overflow':''});
+            if(bg){
+                $('.layer').fadeOut(); //'bg' 클래스가 존재하면 레이어를 사라지게 한다.
+            }else{
+                temp.fadeOut();
+            }
+            e.preventDefault();
+        });
+
+        temp.find($('.confirm2')).click(function(e){
+            if(bg){
+                $('.layer').fadeOut();
+                $('section').css({'overflow':''});
+            }else{
+                temp.fadeOut();
+                $('section').css({'overflow':''});
+            }
+            e.preventDefault();
+        });
+            
+        $('.layer .bg').click(function(e){  //배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
+            $('.layer').fadeOut();
+            e.preventDefault();
+            $('section').css({'overflow':''});
+        });
+    }   
+});
+</script>
+</body>
+</html>

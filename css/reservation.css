@@ -1,0 +1,130 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+
+@font-face {
+    font-family: 'KoPubDotum';
+    src: url('../fonts/KoPubDotumBold.eot'),
+         url('../fonts/KoPubDotumBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KoPubDotumBold.woff') format('woff'),
+         url('../fonts/KoPubDotumBold.ttf') format('truetype'),
+         url('KoPubDotumBold.svg#KoPubDotumBold') format('svg');
+    font-weight:700;
+    font-style:normal;
+  }
+  
+  @font-face {
+    font-family: 'KoPubDotum';
+    src: url('../fonts/KoPubDotumMedium.eot'),
+         url('../fonts/KoPubDotumMedium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KoPubDotumMedium.woff') format('woff'),
+         url('../fonts/KoPubDotumMedium.ttf') format('truetype'),
+         url('KoPubDotumMedium.svg#KoPubDotumMedium') format('svg');
+    font-weight:500;
+    font-style:normal;
+  }
+  
+  @font-face {
+    font-family: 'KoPubDotum';
+    src: url('../fonts/KoPubDotumLight.eot'),
+         url('../fonts/KoPubDotumLight.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/KoPubDotumLight.woff') format('woff'),
+         url('../fonts/KoPubDotumLight.ttf') format('truetype'),
+         url('KoPubDotumLight.svg#KoPubDotumLight') format('svg');
+    font-weight:300;
+    font-style:normal;
+  }
+html,body{
+    height: 100%;
+    font-family:'KoPubDotum';
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+ul,li{list-style:none;}
+/*--------------------header------------------- */
+
+header{width:100%;background-color:black;}
+header .nav{position:fixed;z-index:3;width:90%;padding:2.5% 5% 2.5% 5%;background-color:#e8e8e8;}
+header .nav #home{float:left;width:15%;}
+header .nav #home img{width:52px;height:52px;}
+
+.nav #search{width:70%;display:inline-block;}
+.nav #search ul{width:100%;display:inline-block;}
+.nav #search ul li{float:left;display:inline-block;}
+.nav #search ul #search_t{width:90%;}
+.nav #search ul #search_i{float:right;}
+.nav #search ul li span{}
+.nav #search ul li #search_text{
+    width:100%;height:40px;
+    border:0px solid #fff;
+    border-radius:20px 20px 20px 20px;
+    box-shadow:5px 5px 5px #c0c0c0 inset;
+    outline:none;margin-top:5px;
+}
+.nav #search ul li #search_img{width:42px;height:42px;margin-top:5px;}
+.nav #menu{display:inline-block;float: right;}
+.hamburger{}
+
+.s_icon{width:20px;height:20px;}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+/* ----------------------------------- */
+section{width:100%;height:100%;}
+#reservation{width:80%;padding-top:150px;margin-left:auto;margin-right:auto;}
+#reservation h1{font-size:42px;font-weight:700;margin-bottom:30px;}
+#reservation h6{color:#ed6b6b;font-size:28px;margin-bottom:30px;}
+#reservation h3{font-size:21px;font-weight:800;display:inline-block;margin-bottom:30px;margin-right:50px;}
+
+
+#reservation #reservation_listbox01{display:inline-block;margin-right:72px;}
+.progress_bt{color:#fff;font-size:16px;background-color:#f26c4f;padding:7px 20px;float:right;}
+#reservation #reservation_listbox02{display:inline-block;margin-right:72px;}
+#reservation #reservation_listbox03{display:inline-block;color:#c2c2c2}
+#reservation #reservation_listbox03 img{opacity:0.7;}
+#reservation #reservation_listbox03 .progress_bt{background-color:#f2a999;}
+#reservation #reservation_listbox03 .list_box .list_box_it .list_text h2{color:#c2c2c2;}
+
+.list_box{width:350px;}
+.list_box .list_box_it{border:3px solid #ebebeb;}
+.list_box .list_box_it .list_img img{width:350px;height:250px}
+.list_box .list_box_it .list_text{margin-left:12px;margin-right:12px;}
+.list_box .list_box_it .list_text h2{font-size:18px;color: #000;font-weight: 700;margin-top: 22px;}
+.list_box .list_box_it .list_text ul li{margin-bottom:10px;}
+.list_box .list_box_it .list_text ul li:nth-of-type(2){margin-top:20px;}
+.list_box .list_box_it .list_text ul li:nth-of-type(3){float: left;}
+.list_box .list_box_it .list_text ul li:nth-of-type(4){float: right;}
+.list_box .list_box_it .list_text ul li:nth-of-type(5){clear: both;}
+
+.star{float: right;margin-top: -3px;margin-right: 90px;}
+.star li img{margin-left: -5px;}
+.star li{color: #afafaf;}
+
+.date{font-size:18px;margin-top:22px;}
+.date span{display:inline-block;color:#aeaeae;}
+.date p{display:inline-block;float:right;font-weight:700;}
+.time{font-size:18px;margin-top:22px;}
+.time span{display:inline-block;color:#aeaeae;}
+.time p{display:inline-block;float:right;font-weight:700;}
+.txt{font-size:18px;margin-top:22px;}
+.txt span{display:inline-block;color:#aeaeae;}
+.txt p{display:inline-block;float:right;font-weight:700;}
+
+
+
+/* media query */
+/* 키오스크 */
+@media screen and (max-width:1080px){
+    #reservation h6{margin-bottom:80px;}
+
+    #reservation #reservation_listbox02{float:right;}
+
+    #reservation #reservation_listbox03{margin-top:80px;}
+
+    .date{margin-top:30px;}
+
+    .star{margin-top:0;margin-right:170px;}
+}    

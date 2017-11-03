@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/detail_page.css"/>
+    <link rel="stylesheet" href="./css/menu.css"/>
+    <link rel="stylesheet" href="./css/icon.css"/> 
+    <link rel="stylesheet" href="./css/layerpopup.css"/>
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/respond.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script> -->
+    <title>소소한 일탈</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div id="home">
+                <a href="index.html"><img src="img/about/home_icon_pink.png"></a>
+            </div>
+            <div id="search">
+                <ul>
+                    <li id="search_t"><input type='text' id='search_text' /></li>
+                    <li id="search_i"><img src="img/search_icon.png" id="search_img"></li>
+                </ul>
+            </div>
+            <div id="menu_container">
+                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div onclick="history.back();" class="page_cover"></div>
+                <div id="menu">
+                    <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
+                    <nav>
+                        <ul>
+                            <li id="nav_alarm"><img src="img/alarm.png" class="s_icon" id="alarm"><span id="alarm_txt">프랑스 자수 클래스 3일 전입니다.</span></li>
+                            <li id="nav_name"><a href="#"><h1>조하영 님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
+                            <li><a href="#">0 포인트 0 보너스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li class="nav_title">프로젝트 소개</li>
+                            <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
+                            <li class="nav_title">취미 분석</li>
+                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li><a href="review.html">후기 게시판</a></li>
+                            <ul class="menu_icon_list_container">
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/charge.png" alt=""></li>
+                                        <li>충전하기</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
+                                        <li><a href="reservation.html">예약현황</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/customer.png" alt=""></li>
+                                        <li>고객센터</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div id="detail_main_top">
+            <ul class="center">
+                <li id="detail_main_left_container"><img src="img/detail_page/detail_main.png" alt="프랑스자수" id="detail_main_img"></li>
+                <li id="detail_main_right_container">
+                    <ul id="detail_main_right">
+                        <li><h6>#만들기</h6></li>
+                        <li><h1>프랑스 자수 배우기</h1></li>
+                        <li><span>서울특별시 영등포구 여의도동</span></li>
+                        <li><span>60km</span></li>
+                        <li>평점
+                            <ul class="star">
+                                <li>
+                                    <img src="img/star_full.png" alt="">
+                                    <img src="img/star_full.png" alt="">
+                                    <img src="img/star_full.png" alt="">
+                                    <img src="img/star_full.png" alt="">
+                                    <img src="img/star_clear.png" alt="">
+                                    4.0
+                                </li>
+                            </ul>
+                        </li>
+                        <li><span>적립 포인트</span></li>
+                        <li><span>600 pt</span></li>
+                        <li>* 다른 클래스와 함께 예약해 할인혜택을 받으세요!</li>
+                        <li><p>클래스 가격<span id="price">60,000원</span></p></li>
+                        <li><img src="img/detail_page/heart.png" alt="좋아요" id="heart"></li>
+                        <li><img src="img/detail_page/share.png" alt="공유하기"></li>
+                        <li><a href="" class="center" id="reservation_bt"><p>예약하기</p></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="layer">
+            <div class="bg"></div>
+            <div id="layer2" class="pop-layer">
+                <div class="pop-container">
+                    <div class="pop-conts">
+                        <!--content //-->
+                        <div class="btn-r">
+                            <a href="#" class="cbtn"><img src="img/detail_page/popup_close_bt.png" alt=""></a>
+                        </div>
+                        <div class='wrap'>
+                            <div class='btn-holder'>
+                                <button id='btnPrev'><img src="img/detail_page/calender_left.png" alt=""></button>
+                                <!-- &lt; -->
+                                    <span id='currentDate'></span> 
+                                <button id='btnNext'><img src="img/detail_page/calender_right.png" alt=""></button>
+                                <!-- &gt; -->
+                            </div>
+                            <div id="calendar"></div>
+                        </div>
+                        <div class="wrap2" style="display:none">
+                            <div id="time">
+                                <span class="bar">bar</span><h1>시간</h1>
+                                <ul id="time_list">
+                                    <li>
+                                        <ul id="time_listbox01">
+                                            <li>주 3일</li>
+                                            <li class="popup_left_text">월/수/금 : 오후 1시 ~ 오후 4시<span class="choice">선택</span></li>
+                                            <!-- <li class="popup_right_bt"><span class="choice">선택</span></li> -->
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul id="time_listbox02">
+                                            <li class="popup_left_text">월/수/금 : 오후 5시 ~ 오후 8시<span class="choice">선택</span></li>
+                                            <!-- <li class="popup_right_bt"><span class="choice">선택</span></li> -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="product">
+                                <span class="bar">bar</span><h1>만들 물건</h1>
+                                <ul id="product_list">
+                                    <li>
+                                        <ul id="product_listbox01">
+                                            <li>
+                                                도자기 그릇 및 컵<br />
+                                                20,000
+                                                <span class="choice">선택</span>
+                                            </li>    
+                                            <!-- <li><span class="choice">선택</span></li> -->
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul id="product_listbox02">
+                                            <li>
+                                                도자기 티 세트 (컵 + 컵받침)<br />
+                                                50,000
+                                                <span class="choice">선택</span>
+                                            </li>    
+                                            <!-- <li><span class="choice">선택</span></li> -->
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <ul id="product_listbox03">
+                                            <li>
+                                                도자기 꽃병<br />
+                                                60,000
+                                                <span class="choice">선택</span>
+                                            </li>    
+                                            <!-- <li><span class="choice">선택</span></li> -->
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="amount">
+                                <span class="bar">bar</span><h1>수량</h1>
+                                <ul>
+                                    <li><a href="#" id="minus" class="mi_bt">-</a></li>
+                                    <li><span id="number_updown">1</span></li>
+                                    <li><a href="" id="plus" class="mi_bt">+</a></li>
+                                </ul>
+                                <div id="amount_bottom">
+                                    <h2>20,000원</h2>
+                                    <span class="pay">결제</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment" style="display:none">
+                            <span class="bar">bar</span><h1>결제</h1>
+                            <ul id="payment_list">
+                                <li><input type="radio" name="payment_" id="point"><label for="point"><span></span></label><h3>보유포인트 및 보너스</h3>
+                                    <ul id="point_sub">
+                                        <li>0포인트&nbsp;&nbsp;0보너스</li>
+                                        <li><span class="point_c">사용</span></li>
+                                    </ul>
+                                </li>
+                                <li><input type="radio" name="payment_" id="handphone"><label for="handphone"><span></span></label><h3>핸드폰</h3></li>
+                                <li><input type="radio" name="payment_" id="card"><label for="card"><span></span></label><h3>신용카드</h3><br /><br />
+                                    <h5><span class="payment_c">은행 선택</span></h5>
+                                </li>
+                                <li><input type="radio" name="payment_" id="deposit"><label for="deposit"><span></span></label><h3>무통장 입금</h3><br /><br />
+                                    <h5><span class="payment_c">카드사 선택</span></h5>
+                                </li>
+                            </ul>
+                            <div id="payment_bottom">
+                                <h2>20,000원</h2>
+                                <span class="pay2">결제</span>
+                            </div>
+                        </div>
+                        <div class="last_payment" style="display:none">
+                            <h1 class="center">결제가 완료되었습니다 !</h1>
+                            <ul class="center">
+                                <li><span class="confirm"><a href="reservation.html">예약 내역 확인</a></span></li>
+                                <li><span class="confirm2">확인</span></li>
+                            </ul>
+                        </div>
+                        <!--// content-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="detail_main_bottom">
+            <div id="bottom_container" class="center">
+                <div id="intro" class="detail_bt checked">
+                    클래스 소개
+                </div>
+                <div id="inquiry" class="detail_bt">
+                    유의사항
+                </div>
+                <div id="review" class="detail_bt">
+                    REVIEW
+                </div>
+                <div id="question" class="detail_bt">
+                    Q&A
+                </div>
+            </div>
+            <div id="detail_img"><img src="img/detail_page/france.png" alt="프랑스 자수"></div>
+            <div id="detail_review">
+                <h1>REVIEW</h1>
+                <div id="detail_review_contentbox01">
+                    <div id="contentbox01_top">
+                        <h2>취미 만족도&nbsp;<span>| 이 취미를 체험하신 분들의 평균 평점입니다.</span></h2>
+                        <ul id="review_star">
+                            <li>
+                                <img src="img/star_full.png">
+                                <img src="img/star_full.png">
+                                <img src="img/star_full.png">
+                                <img src="img/star_full.png">
+                                <img src="img/star_full.png">
+                                <span>5</span>/5
+                            </li>
+                        </ul>
+                        <span class="review_write">후기 작성하기</span>
+                    </div>
+                    <div id="contentbox01_bottom">
+                        <h2>소소한 일탈 잘 즐기셨나요? 후기 작성하고 최대 <span>6,500 POINT</span>의 혜택을 누리세요!</h2>
+                        <div id="contentbox01_bottom_item" class="center">
+                            <ul>
+                                <li>일반 후기 작성 시</li>
+                                <li><img src="img/detail_page/review_point.png" alt=""></li>
+                                <li>500P</li>
+                            </ul>
+                            <ul>
+                                <li>프리미엄 후기 작성 시</li>
+                                <li><img src="img/detail_page/review_point.png" alt=""></li>
+                                <li>1000P</li>
+                            </ul>
+                            <ul>
+                                <li>베스트 후기 작성 시</li>
+                                <li><img src="img/detail_page/review_point.png" alt=""></li>
+                                <li>5000P</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="detail_review_contentbox02">
+                    <h2>프리미엄 후기</h2>
+                    <ul class="contentbox02_list">
+                        <li><img src="img/list_box01.png" alt="프랑스 자수"></li>
+                        <li>
+                            <ul class="contentbox02_text">
+                                <li>프랑스 자수 배우기</li>
+                                <li><span>작성자</span> 이혜원</li>
+                                <li><span>추천</span> 15</li>
+                                <li><span>조회</span> 21</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="contentbox02_list">
+                        <li><img src="img/list_box06.jpg" alt="프랑스 자수" width="229px" height="163px"></li>
+                        <li>
+                            <ul class="contentbox02_text">
+                                <li>프랑스 자수 배우기</li>
+                                <li><span>작성자</span> 김희수</li>
+                                <li><span>추천</span> 9</li>
+                                <li><span>조회</span> 11</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="contentbox02_list">
+                        <li><img src="img/list_box04.png" alt="프랑스 자수"></li>
+                        <li>
+                            <ul class="contentbox02_text">
+                                <li>프랑스 자수 배우기</li>
+                                <li><span>작성자</span> 배윤경</li>
+                                <li><span>추천</span> 3</li>
+                                <li><span>조회</span> 20</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="contentbox02_list">
+                        <li><img src="img/list_box05.png" alt="프랑스 자수"></li>
+                        <li>
+                            <ul class="contentbox02_text">
+                                <li>프랑스 자수 배우기</li>
+                                <li><span>작성자</span> 윤지수</li>
+                                <li><span>추천</span> 30</li>
+                                <li><span>조회</span> 50</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div id="detail_review_contentbox03">
+                    <h2>일반 후기</h2>
+                    <div class="contentbox03_list">
+                        <ul class="contentbox03_listbox">
+                            <li class="listbox_number">4</li>
+                            <li>
+                                <ul class="review_star2">
+                                    <li>
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="listbox_txt">자수가 너무 예뻐서 만족스러워요.</li>
+                            <li class="listbox_name">슴쨩</li>
+                            <li>2017.08.**</li>
+                        </ul>
+                    </div>
+                    <div class="contentbox03_list">
+                        <ul class="contentbox03_listbox">
+                            <li class="listbox_number">3</li>
+                            <li>
+                                <ul class="review_star2">
+                                    <li>
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="listbox_txt">정말 재밌었습니다.</li>
+                            <li class="listbox_name">김이솔</li>
+                            <li>2017.08.**</li>
+                        </ul>
+                    </div>
+                    <div class="contentbox03_list">
+                        <ul class="contentbox03_listbox">
+                            <li class="listbox_number">2</li>
+                            <li>
+                                <ul class="review_star2">
+                                    <li>
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="listbox_txt">계속 다니고싶어요</li>
+                            <li class="listbox_name">한초아</li>
+                            <li>2017.07.**</li>
+                        </ul>
+                    </div>
+                    <div class="contentbox03_list">
+                        <ul class="contentbox03_listbox">
+                            <li class="listbox_number">1</li>
+                            <li>
+                                <ul class="review_star2">
+                                    <li>
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                        <img src="img/star_full.png">
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="listbox_txt">너무 좋아요ㅠㅠ</li>
+                            <li class="listbox_name">김창한</li>
+                            <li>2017.07.**</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="detail_review_contentbox04" class="center">
+                    1
+                </div>
+            </div>
+            <div id="detail_question" style="display:none">
+                <h1>Q&A</h1>
+                <h2>문의 게시판 입니다.</h2>
+                <span class="question_inquery">문의하기</span>
+                <div class="question_list">
+                    <ul>
+                        <li class="listbox_number">4</li>
+                        <li><span class="finish">답변완료</span></li>
+                        <li class="listbox_pay">가격문의</li>
+                        <li><img src="img/detail_page/question.png" alt="자물쇠"></li>
+                        <li class="listbox_name">전호진</li>
+                        <li>2017.08.**</li>
+                    </ul>
+                </div>
+                <div class="question_list">
+                    <ul>
+                        <li class="listbox_number">3</li>
+                        <li><span class="finish">답변완료</span></li>
+                        <li class="listbox_pay">예약 취소 문의</li>
+                        <li><img src="img/detail_page/question.png" alt="자물쇠"></li>
+                        <li class="listbox_name">곽희수</li>
+                        <li>2017.08.**</li>
+                    </ul>
+                </div>
+                <div class="question_list">
+                    <ul>
+                        <li class="listbox_number">2</li>
+                        <li><span class="finish">답변완료</span></li>
+                        <li class="listbox_pay">카드결제</li>
+                        <li><img src="img/detail_page/question.png" alt="자물쇠"></li>
+                        <li class="listbox_name">신지원</li>
+                        <li>2017.07.**</li>
+                    </ul>
+                </div>
+                <div class="question_list">
+                    <ul>
+                        <li class="listbox_number">1</li>
+                        <li><span class="finish">답변완료</span></li>
+                        <li class="listbox_pay">가격문의</li>
+                        <li><img src="img/detail_page/question.png" alt="자물쇠"></li>
+                        <li class="listbox_name">노을</li>
+                        <li>2017.07.**</li>
+                    </ul>
+                </div>
+                <div id="detail_question_footer">
+
+                </div>
+            </div>
+        </div>
+    <div id="footer">
+        <div id="foot">
+            <h6 class="center" id="collection_footer">회사 소개     |     이용 약관     |     이용 안내     |     개인정보 취급방침</h6><br />
+        </div>
+        <div id="f_container" class="center">
+            <span class="top_bt">
+                <ul>
+                    <li>TOP</li>
+                    <li><a href="#detail_main_top" id="footer_top_bt"><img src="img/footer_top_bt.png"></a></li>
+                </ul>
+            </span>
+            <div id="f_container_box_top">
+                <div class="footer_box center" id="footer_box01">
+                    <ul class="footer_box_left">
+                        <li><h1>小小한 일탈</h1></li>
+                        <li class="size_s">
+                            ⓒ 2017. 소소한일탈<br />
+                            All Rights Reserved.
+                        </li>
+                    </ul>
+                    <ul class="footer_box_right">
+                        <li><span class="footer_bar">bar</span></li>
+                        <li><img src="img/footer_img1.png" alt="小小한 일탈"></li>
+                    </ul>
+                </div>
+                <div class="footer_box center" id="footer_box02">
+                    <ul class="footer_box_left">
+                        <li>
+                            <h1>
+                                고객센터 안내
+                            </h1>
+                        </li>
+                        <li id="size_b">1833-7979</li>
+                        <li class="size_s">
+                            평일 10:00 ~ 18:00
+                        </li>
+                    </ul>
+                    <ul class="footer_box_right">
+                        <li><span class="footer_bar">bar</span></li>
+                        <li><img src="img/footer_img2.png" alt="고객센터"></li>
+                    </ul>
+                </div>
+                <div class="footer_box center" id="footer_box03">
+                    <ul class="footer_box_left">
+                        <li><h1>Follow Us</h1></li>
+                        <li class="size_s">
+                            facebook.com/soso_iltal<br />
+                            instagram.com/soso_iltal
+                        </li>
+                    </ul>
+                    <ul class="footer_box_right">
+                        <li><span class="footer_bar">bar</span></li>
+                        <li><img src="img/footer_img3.png" alt="follow us"></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="f_container_box_bottom" class="center">
+                <p>
+                    상호명 : 소소한일탈  |  사업자 등록번호 : 111-11-11111  [사업자등록정보 확인]<br />
+                    통신판매업신고: 제 2017-서울-011111호  |  주소 : 서울특별시 강남구 압구정동 251<br />
+                    대표 : 버뮤다  | 대표전화 : 070-8842-0955 |  개인정보책임자 : 최윤정
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
+<script>
+$(window).ready(function(){
+    $('#detail_question').css({'display':'none'});
+    $('#detail_review').css({'display':'none'});
+
+    // footer 의 top버튼
+    $('#footer_top_bt').click(function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+    });
+
+    // menu
+    $(".btn").click(function() {
+        $("#menu,.page_cover,html").addClass("open");
+        window.location.hash = "#open";
+    });
+    window.onhashchange = function() {
+        if (location.hash != "#open") {
+            $("#menu,.page_cover,html").removeClass("open");
+        }
+    };
+
+    // submenu (클래스 소개...Q&A)
+    var $detail_bt = $('.detail_bt');
+    $detail_bt.click(function(){
+        var $detail_bt = $(this);
+        // var $checked = $('.chedcked') === true;
+        if($('.detail_bt').hasClass('checked') === true ){
+        $('.detail_bt').removeClass('checked');
+        $detail_bt.addClass('checked');
+        }else{}
+    });
+
+    // layer-popup
+    $('#reservation_bt').click(function(){
+        $('section').css({'overflow':'hidden'});
+        layer_open('layer2');
+        return false;
+    })
+    function layer_open(el){
+        var temp = $('#' + el);
+        var bg = temp.prev().hasClass('bg');    //dimmed 레이어를 감지하기 위한 boolean 변수
+        var confirm2 = temp.prev().hasClass('confirm2');
+        if(bg){
+        $('.layer').fadeIn();   //'bg' 클래스가 존재하면 레이어가 나타나고 배경은 dimmed 된다.
+  
+        }else{
+ 
+        temp.fadeIn();
+  
+        }         
+   
+        // 화면의 중앙에 레이어를 띄운다.
+        if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
+            else temp.css('top', '0px');
+        if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-'+temp.outerWidth()/2+'px');
+            else temp.css('left', '0px');
+
+        temp.find('a.cbtn').click(function(e){
+            $('section').css({'overflow':''});
+            if(bg){
+                $('.layer').fadeOut(); //'bg' 클래스가 존재하면 레이어를 사라지게 한다.
+            }else{
+                temp.fadeOut();
+            }
+            e.preventDefault();
+        });
+
+        temp.find($('.confirm2')).click(function(e){
+            if(bg){
+                $('.layer').fadeOut();
+                $('section').css({'overflow':''});
+            }else{
+                temp.fadeOut();
+                $('section').css({'overflow':''});
+            }
+            e.preventDefault();
+        });
+            
+        $('.layer .bg').click(function(e){  //배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
+            $('.layer').fadeOut();
+            e.preventDefault();
+            $('section').css({'overflow':''});
+        });
+    }             
+
+    // Calendar
+    var calendar = new controller(); 
+    calendar.init();
+
+    function controller(target) {
+
+    var that = this;   
+    var m_oMonth = new Date();
+    m_oMonth.setDate(1);
+
+    this.init = function() {
+        that.renderCalendar();
+        that.initEvent();
+    }
+
+    /* 달력 UI 생성 */
+    this.renderCalendar = function() {
+        var arrTable = [];
+
+        arrTable.push('<table><colgroup>');
+        for(var i=0; i<7; i++) {
+            arrTable.push('<col width="100">');
+        }		
+        arrTable.push('</colgroup><thead><tr>');
+
+        var arrWeek = "일월화수목금토".split("");
+
+        for(var i=0, len=arrWeek.length; i<len; i++) {
+            var sClass = '';
+            sClass += i % 7 == 0 ? 'sun' : '';
+            sClass += i % 7 == 6 ? 'sat' : '';
+            arrTable.push('<td class="'+sClass+'">' + arrWeek[i] + '</td>');
+        }
+        arrTable.push('</tr></thead>');
+        arrTable.push('<tbody>');
+
+        var oStartDt = new Date(m_oMonth.getTime());
+        // 1일에서 1일의 요일을 빼면 그 주 첫번째 날이 나온다.
+        oStartDt.setDate(oStartDt.getDate() - oStartDt.getDay());
+
+        for(var i=0; i<100; i++) {
+            if(i % 7 == 0) {
+                arrTable.push('<tr>');
+            }
+            var today = 'circle_date'
+            var sClass = 'date-cell '
+            sClass += m_oMonth.getMonth() != oStartDt.getMonth() ? 'not-this-month ' : '';
+            sClass += i % 7 == 0 ? 'sun' : '';
+            sClass += i % 7 == 6 ? 'sat' : '';
+
+            arrTable.push('<td class="'+sClass+'">' + oStartDt.getDate() + '</td>');
+            oStartDt.setDate(oStartDt.getDate() + 1);
+
+            if(i % 7 == 6) {
+                arrTable.push('</tr>');
+                if(m_oMonth.getMonth() != oStartDt.getMonth()) {
+                    break;
+                }
+            }
+        }
+        arrTable.push('</tbody></table>');
+
+        $('#calendar').html(arrTable.join(""));
+
+        that.changeMonth();
+    }
+
+        /* Next, Prev 버튼 이벤트 */
+        this.initEvent = function() {
+            $('#btnPrev').click(that.onPrevCalendar);
+            $('#btnNext').click(that.onNextCalendar);
+        }
+
+        /* 이전 달력 */
+        this.onPrevCalendar = function() {
+            m_oMonth.setMonth(m_oMonth.getMonth() - 1);
+            that.renderCalendar();
+        }
+
+        /* 다음 달력 */
+        this.onNextCalendar = function() {
+            m_oMonth.setMonth(m_oMonth.getMonth() + 1);
+            that.renderCalendar();
+        }
+
+        /* 달력 이동되면 상단에 현재 년 월 다시 표시 */
+        this.changeMonth = function() {
+            $('#currentDate').text(that.getYearMonth(m_oMonth).substr(0,9));
+        }
+
+        /* 날짜 객체를 년 월 문자 형식으로 변환 */
+        this.getYearMonth = function(oDate) {
+            return (oDate.getMonth() + 1) + '월';
+            // oDate.getFullYear() + '년 ' + 
+        }
+    }
+
+    // choice bt
+    var $choice = $('.choice');
+    $choice.click(function(){
+        var $choice_c = $(this);
+        if($choice_c.hasClass('check')){
+            $choice_c.removeClass('check');
+            // $choice_c.addClass('c');
+        }else{
+            // $choice_c.removeClass('word_circle');
+            $choice_c.addClass('check');
+            // $('#'+id).addClass('selected');
+        }
+    });
+
+
+
+
+
+
+
+
+    
+    // var listbox01 = 20000;
+    // var listbox02 = 50000;
+    // var listbox03 = 60000;
+
+    // if($('#product_listbox01').find('.choice').hasClass('check')){
+    //     var num = 20000;
+    //     $('#minus').click(function(e){
+    //         e.preventDefault();
+    //         // var stat = $('#number_updown').text();
+    //         var push = $('#amount_bottom').children('h2').text();
+    //         // var num = parseInt(push,10);
+    //         num--;
+    //         if(num<=0){
+    //             alert('더이상 줄일수 없습니다.');
+    //         num =1;
+    //         }
+    //         $('#amount_bottom').children('h2').text(num);
+    //         // $('#number_updown').text(num);
+    //     });
+    //     $('#plus').click(function(e){
+    //         e.preventDefault();
+    //         // var stat = $('#number_updown').text();
+    //         var push = $('#amount_bottom').children('h2').text();
+    //         // var num = parseInt(stat,10);
+    //         num++;
+
+    //         if(num>10){
+    //             alert('더이상 늘릴수 없습니다.');
+    //             num=10;
+    //         }
+    //         $('#amount_bottom').children('h2').text(num);
+    //         // $('#number_updown').text(num);
+    //     });
+    // }
+
+
+
+    // $('#product_listbox01').children('span') = 20000;
+    // $('#product_listbox01').children('span').hasClass('check') = 20000;
+    // $('#product_listbox02').children('span').hasClass('check') = 50000;
+    // $('#product_listbox03').children('span').hasClass('check') = 60000;
+    // console.log($('#product_listbox01').children('span'));
+    // $('#amount_bottom').children('h2').push('')
+
+
+
+    // $(function(){
+        $('#minus').click(function(e){
+            e.preventDefault();
+            var stat = $('#number_updown').text();
+            var num = parseInt(stat,10);
+            num--;
+            if(num<=0){
+                alert('더이상 줄일수 없습니다.');
+            num =1;
+            }
+            $('#number_updown').text(num);
+        });
+        $('#plus').click(function(e){
+            e.preventDefault();
+            var stat = $('#number_updown').text();
+            var num = parseInt(stat,10);
+            num++;
+
+            if(num>10){
+                alert('더이상 늘릴수 없습니다.');
+                num=10;
+            }
+            $('#number_updown').text(num);
+        });
+    // });
+
+    // 달력 클릭시 넘어가기
+    var checkcount = 0;
+
+    $('td').click(function(){
+        var $td = $(this);
+        $td.addClass('calendar_c');
+        checkcount++;
+        if(checkcount === 3){
+            $('.wrap2').css({'display':''});
+            $('.wrap').css({'display':'none'});
+            $('.payment').css({'display':'none'});
+        }
+    })
+
+
+
+
+    // 결제
+    $('.pay').click(function(){
+        $('.wrap').css({'display':'none'});
+        $('.wrap2').css({'display':'none'});
+        $('.payment').css({'display':''});
+    });
+    $('.pay2').click(function(){
+        $('.payment').css({'display':'none'});
+        $('.last_payment').css({'display':''});
+    });
+
+    // 하트 클릭시
+    $('#heart').click(function(){
+        if($(this).attr('src') === 'img/detail_page/heart_f.png'){
+            $('#heart').attr('src','img/detail_page/heart.png');
+        }else{
+            $('#heart').attr('src','img/detail_page/heart_f.png');
+        // }
+        }
+    });
+
+    // 리뷰
+    $('#review').click(function(){
+        $('#detail_img').css({'display':'none'});
+        $('#detail_review').css({'display':''});
+        $('#detail_question').css({'display':'none'});
+        $('div').css({'height':''});
+    });
+
+    // 클래스 소개
+    $('#intro').click(function(){
+        $('#detail_review').css({'display':'none'});
+        $('#detail_img').css({'display':''});
+        $('#detail_question').css({'display':'none'});
+    });
+
+    // Q&A
+    $('#question').click(function(){
+        $('#detail_img').css({'display':'none'});
+        $('#detail_review').css({'display':'none'});
+        $('#detail_question').css({'display':''});
+        $('div').css({'height':''});
+    });
+
+});
+    </script>
+</body>
+</html>
