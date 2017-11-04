@@ -8,10 +8,9 @@
     <link rel="stylesheet" href="./css/main.css"/>
     <link rel="stylesheet" href="./css/icon.css"/>
     <link rel="stylesheet" href="./css/menu.css"/> 
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=0">    
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/respond.min.js"></script>
-    <!-- <script type="text/javascript" src="./js/jquery.smoothwheel.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script>
     <title>소소한 일탈</title>
 </head>
@@ -120,7 +119,6 @@
         <div id="main_bt_anal" style="display:none">
             <div id="hobby_anal_main" class="center">
                 <div id="main_yellow_border">
-                        <!-- <img src="img/hobby_main_title_icon.png" alt="title-icon"> -->
                     <span id="hobby_anal_icon">
                         <span id="title_icon_back">white
                         <img src="img/hobby_main_title_icon.png" alt="title-icon"></span>
@@ -144,7 +142,7 @@
                     <h3>요즘 나의 관심사를 선택해주세요 !</h3>
                     <div id="testbox_container" class="center"> 
                         <div id="testbox_container_01">
-                            <!-- <input type="radio" name="test" id="interest_01" /><span></span> -->
+                            <input type="radio" name="test" id="interest_01" value="스트레스해소"/><span></span>
                             <div id="interest_box01" class="interest">
                                 <label for="interest_01">
                                     <h4>01</h4>
@@ -154,7 +152,7 @@
                             </div>
                         </div>
                         <div id="testbox_container_02">
-                            <!-- <input type="radio" name="test" id="interest_02" /> -->
+                            <input type="radio" name="test" id="interest_02" value="기분전환"/>
                             <div id="interest_box02" class="interest">
                                 <label for="interest_02">
                                     <h4>02</h4>
@@ -164,7 +162,7 @@
                             </div>
                         </div>
                         <div id="testbox_container_03">
-                            <!-- <input type="radio" name="test" id="interest_03" /> -->
+                            <input type="radio" name="test" id="interest_03" value="마음의안정"/>
                             <div id="interest_box03" class="interest">
                                 <label for="interest_03">
                                     <h4>03</h4>
@@ -181,7 +179,7 @@
                     <h3>가장 끌리는 색상을 선택해주세요 !</h3>
                     <div id="testbox_container02" class="center">
                         <div id="testbox_container02_01">
-                            <!-- <input type="radio" name="test2" id="color_01" />  -->
+                            <input type="radio" name="test2" id="color_01" value="RED"/> 
                             <label for="color_01">
                                 <div id="color_box01" class="color">
                                     <h4>01</h4>
@@ -190,7 +188,7 @@
                             </label>
                         </div>  
                         <div id="testbox_container02_02">
-                            <!-- <input type="radio" name="test2" id="color_02" /> -->
+                            <input type="radio" name="test2" id="color_02" value="YELLOW"/>
                             <label for="color_02">
                                 <div id="color_box02" class="color">
                                     <h4>02</h4>
@@ -199,7 +197,7 @@
                             </label>
                         </div>  
                         <div id="testbox_container02_03">
-                            <!-- <input type="radio" name="test2" id="color_03" /> -->
+                            <input type="radio" name="test2" id="color_03" value="BLUE"/>
                             <label for="color_03">
                                 <div id="color_box03" class="color">
                                     <h4>03</h4>
@@ -232,7 +230,7 @@
                     </div>
                 </div>
                 <div id="hobby_anal_result_bt">
-                    <a href="#hobby_anal_result" class="center" id="result_go"><p id="result_bt">결과 보기</p></a>
+                    <a herf="" class="center"><p id="result_bt">결과 보기</p></a>
                 </div>
             </div>
         </div>
@@ -241,30 +239,31 @@
             <div id="hobby_anal_result_top">
                <h1>분 석 결 과</h1>
                <p>
-                   손님은<br />
+                   000 님은<br />
                    <span class="tendency_result">조용함</span>을/를 즐길 줄 아는 사람입니다.
                </p>
                <ul class="center">
-                    <li>성향</li>
-                    <li id="tendency" class="tendency_result">조용한</li>
-                </ul>
-               <ul class="center">
                    <li>활동</li>
-                   <li id="activity" class="graph"><span>persent</span></li>
-                   <li id="text">0 %</li>
+                   <li id="activity" class="graph"><span>percent</span></li>
+                   <li class="text">0 %</li>
                </ul>
                <ul class="center">
                    <li>만들기</li>
-                   <li id="activity2" class="graph"><span>persent</span></li>
-                   <li id="text2">100%</li>
+                   <li id="activity2" class="graph"><span>percent</span></li>
+                   <li class="text2">100%</li>
+               </ul>
+               <ul class="center">
+                    <li>성향</li>
+                    <li id="tendency" class="tendency_result">조용한</li>
                </ul>
                <h2>조용하고 감성적이며 만들 수 있는 취미를 찾고 계시는군요.</h2>
-               <!-- <span id="hobby_anal_result_arrow"><a href="#hobby_anal_result_bottom_container"><img src="img/hobby_main_title_bt.png" alt=""></a></span> -->
+               <span id="hobby_anal_result_arrow"><a href=""><img src="img/hobby_main_title_bt.png" alt=""></a></span>
             </div>
             </div>
             <div id="hobby_anal_result_bottom_container">
                 <div id="hobby_anal_result_bottom">
                     <h1>나에게 맞는 취미는?</h1>
+                    <div id="a_list_container3">   
                     <div class="list">
                         <div class="list_box">
                             <a href="detail_page.html">                                
@@ -348,11 +347,12 @@
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
             <div id="hobby_anal_result_footer">
                 <div id="hobby_anal_result_footer_container" class="center">
-                    <h6><a href="#main_02" id="replay">다시하기</a></h6>
-                    <h6><a href="#main" id="gohome">홈으로</a></h6>
+                    <h6>다시하기</h6>
+                    <h6>홈으로</h6>
                 </div>
             </div>
         </div>
@@ -565,7 +565,7 @@
                                 <li class="list_text">
                                     <ul>
                                         <li><h2>프라모델 조립</h2></li>
-                                        <li>가격  90,000원 부터</li>
+                                        <li>가격  8=90,000원 부터</li>
                                         <li><span>경기도 의왕시 포일동</span></li>
                                         <li><span>1.2km</span></li>
                                         <li>
@@ -621,9 +621,10 @@
             <h1 class="center">컬 렉 션</h1>
             <span class="bar">bar</span>
             <p class="center">내가 담은 취미 활동 목록을 볼 수 있습니다.</p>
+            <div id="collection_plus"></div>
             <div id="collection_text">
                 <h3 class="center">마음이 가는 취미에 하트를 눌러 내 컬렉션에 담아보세요.</h3>
-                <a href="#myhobby" class="center"><p id="collection_bt" class="center">추가하러 가기</p></a>
+                <a href="#" class="center"><p id="collection_bt" class="center">추가하러 가기</p></a>
             </div>
         </div>
         <div id="footer">
@@ -708,29 +709,8 @@
             $('#hobby_anal_title_bt').click(function(event){
                 event.preventDefault();
                 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
-            });
-            $('#replay').click(function(event){
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
-                $('#hobby_anal_result').slideUp('normal',function(){
-                    $('#main_bt_anal').slideUp();
-                    $interest.removeClass('cover_img');
-                    $color.removeClass('cover_img');
-                    $word_circle.removeClass('selected');
-                    $word_circle.addClass('word_circle');
-                });
-            });
-            $('#gohome').click(function(event){
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
-                $('#hobby_anal_result').slideUp('normal',function(){
-                    $('#main_bt_anal').slideUp();
-                    $interest.removeClass('cover_img');
-                    $color.removeClass('cover_img');
-                    $word_circle.removeClass('selected');
-                    $word_circle.addClass('word_circle');
-                });
-            });
+            })
+
             $('#hobbyanal_go').click(function(event){
                 event.preventDefault();
                 $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
@@ -743,11 +723,6 @@
                     $(".nav").css({"background-color": '#ed6b6b'});
                 } else{
                     $(".nav").css({"background-color": ''});
-                }
-                if(scrollPX > 3660){
-                    $('#main_yellow_border').find('p').fadeIn();
-                }else{
-                    $('#main_yellow_border').find('p').fadeOut();
                 }
             });
             $('.nav').scroll(function () {
@@ -769,7 +744,6 @@
             $('#hobbyanal_bt').click(function(e){
                 if($('#main_bt_anal').is(":visible")){
                     $('#main_bt_anal').slideUp();
-                    $('#hobby_anal_result').slideUp();
                 }else{
                     $('#main_bt_anal').slideDown();
                 }
@@ -784,15 +758,26 @@
                 }
              });
 
-             $('#result_go').click(function(event){
-                event.preventDefault();
-                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 700);
+            // 하트 클릭시
+            $('.heart_white').click(function(event){
+                if($(this).attr('src') === 'img/heart_f.png'){
+                    event.preventDefault();
+                    $(this).attr('src','img/heart_white.png');
+                }else{
+                    event.preventDefault();
+                    $(this).attr('src','img/heart_f.png');
+                // }
+                }
             });
-
 
             // interest 테스트1 클릭 시
             var $interest = $('.interest');
             $interest.click(function(){
+                //console.log($(this).val());
+
+                // console.log($interest.index(this));
+                // console.log($('#interest_0'+parseInt($interest.index(this)+1, 10)).val());
+
                 var $interest_t = $(this);
                 if($interest.hasClass('cover_img')){
                     $interest.not(this).addClass('cover_img');
@@ -800,6 +785,49 @@
                 }else{
                     $interest.not(this).addClass('cover_img');
                 }
+            });
+
+            $('#search_text').click(function(){
+                $('#search_').css({'display':''});
+                if($('#main').click(function(){
+                    $('#search_').css({'display':'none'});
+                })){}
+            });
+
+            var $result = $('#activity');
+            var $result2 = $('#activity2');
+            var $text = $('.text');
+            var $text2 = $('.text2');
+            var $inter01 = $('#interest_box01');
+            var $inter02 = $('#interest_box02');
+            var $inter03 = $('#interest_box03');
+            var $color01 = $('#color_box01');
+            var $color02 = $('#color_box02');
+            var $color03 = $('#color_box03');
+
+            $inter01.click(function(){
+                $result.css({'width': '50' + '%'});
+                $text.html('100%');
+            });
+            $inter02.click(function(){
+                $result.css({'width': '25' + '%'});
+                $text.html('50%');
+            });
+            $inter03.click(function(){
+                $result.css({'width': '0' + '%'});
+                $text.html('0%');
+            });
+            $color01.click(function(){
+                $result2.css({'width': '50' + '%'});
+                $text2.html('100%');
+            });
+            $color02.click(function(){
+                $result2.css({'width': '25' + '%'});
+                $text2.html('50%');
+            });
+            $color03.click(function(){
+                $result2.css({'width': '0' + '%'});
+                $text2.html('0%');
             });
 
             // color 테스트2 클릭 시
@@ -817,87 +845,16 @@
             // word 테스트3 클릭 시
             var $word_circle = $('.word_circle');
              $word_circle.click(function(){
-                 var $circle = $(this);
-                //  , id = $circle.data('id');
-                 if($circle.hasClass('word_circle') === true){
-                    $word_circle.removeClass('selected');
-                    $word_circle.addClass('word_circle');
-                    $circle.removeClass('word_circle');
-                    $circle.addClass('selected');
-                 }else{
+                 var $circle = $(this), id = $circle.data('id');
+                 if($circle.hasClass('selected')){
                     $circle.removeClass('selected');
                     $circle.addClass('word_circle');
+                 }else{
+                    $circle.removeClass('word_circle');
+                    $circle.addClass('selected');
+                    $('#'+id).addClass('selected');
                  }
              });
-            
-            //  var $detail_bt = $('.detail_bt');
-            //  $detail_bt.click(function(){
-            //      var $detail_bt = $(this);
-            //      // var $checked = $('.chedcked') === true;
-            //      if($('.detail_bt').hasClass('checked') === true ){
-            //      $('.detail_bt').removeClass('checked');
-            //      $detail_bt.addClass('checked');
-            //      }else{}
-            //  });
-
-
-
-            // 하트 클릭시
-            $('.heart_white').click(function(event){
-                if($(this).attr('src') === 'img/heart_f.png'){
-                    event.preventDefault();
-                    $(this).attr('src','img/heart_white.png');
-                }else{
-                    event.preventDefault();
-                    $(this).attr('src','img/heart_f.png');
-                // }
-                }
-            });
-            
-            $('#search_text').click(function(){
-                $('#search_').css({'display':''});
-                if($('#main').click(function(){
-                    $('#search_').css({'display':'none'});
-                })){}
-            });
-
-            var $result = $('#activity');
-            var $result2 = $('#activity2');
-            var $text = $('#text');
-            var $text2 = $('#text2');
-            var $inter01 = $('#interest_box01');
-            var $inter02 = $('#interest_box02');
-            var $inter03 = $('#interest_box03');
-            var $color01 = $('#color_box01');
-            var $color02 = $('#color_box02');
-            var $color03 = $('#color_box03');
-
-            $inter01.click(function(){
-                $result.css({'width': '50' + '%'});
-                $text.html('100%');
-            });
-            $inter02.click(function(){
-                $result.css({'width': '25' + '%'});
-                $text.html('50%');
-            });
-            $inter03.click(function(){
-                $result.css({'width': '15' + '%'});
-                $text.html('25%');
-            });
-            $color01.click(function(){
-                $result2.css({'width': '50' + '%'});
-                $text2.html('100%');
-            });
-            $color02.click(function(){
-                $result2.css({'width': '25' + '%'});
-                $text2.html('50%');
-            });
-            $color03.click(function(){
-                $result2.css({'width': '15' + '%'});
-                $text2.html('25%');
-            });
-
-
             var $prev = $('#a_list_container').find('.prev_bt');
             var $next = $('#a_list_container').find('.next_bt');
             var cnt = 0;
@@ -916,9 +873,9 @@
             });
 
 
+            
 
-
-
+            
         });
     </script>
 </body>

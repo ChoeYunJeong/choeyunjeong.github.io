@@ -25,8 +25,7 @@ a.cbtn:hover {color:#fff;}
 
 
 
-/* 크롬에서만 가능 (스크롤 바 숨기기) */
-.layer::-webkit-scrollbar{display:none;}
+
 
 /* 캘린더 */
 .wrap {
@@ -93,7 +92,7 @@ tbody tr:nth-of-type(4) td:nth-of-type(6){border:3px solid #fde472;display: inli
     width:30px;height:4px;
     background-color: #ed6b6b;
 }
-.wrap2{width:600px;margin-left:auto;margin-right:auto;}
+.wrap2{width:600px;margin-left:auto;margin-right:auto;margin-top:50px;}
 .wrap2 h1{font-size:28px;margin-left:40px;margin-top:-14px;}
 .wrap2 ul li{font-size:20px;margin-left:20px;margin-top:24px;font-weight:500;}
 
@@ -154,8 +153,6 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
 .payment_c{border:3px solid #d7d7d7;color:#d7d7d7;padding:4px 40px 4px 40px;border-radius:20px 20px 20px 20px;margin-left:14px;}
 
 h5{margin-left:40px;}
-
-button{background-color:transparent;border:0;}
 
 /* last_payment */
 .last_payment{}

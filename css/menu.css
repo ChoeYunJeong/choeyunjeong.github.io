@@ -43,30 +43,32 @@ html,body{
 
 html.open{overflow: hidden;}
 
+#menu_container{width:15%;float:right;}
 .btn{
-    font-family:'KoPubDotum';
-    width:50px;height:50px;
-    margin-top:37px;margin-right:50px;
-    position:absolute;
-    top:0px;right:0px;
-    z-index:1;
-    cursor:pointer;
+    /* width: 50px;height: 50px; */
+    /* margin-top: 40px;margin-right: 50px; */
+    /* width:15%; */
+    /* position: absolute; */
+    /* top: 0px;right: 0px; */
+    /* display:inline-block; */
+    float: right;
+    z-index: 1;
+    cursor: pointer;
 }
-.btn img{width:40px;height:40px;}
+.btn img{width:40px;height:40px;padding-top:12%;}
   
 .close{
-    z-index:999;
-    width:50px;height:50px;
-    margin-top:50px;margin-right:50px;
-    position:absolute;
-    top:0px;right:0px;
-    cursor:pointer;
+    /* width: 50px;height: 50px; */
+    /* margin-top: 50px;margin-right: 50px; */
+    position: absolute;
+    float: right;
+    top: 0px;right: 0px;
+    cursor: pointer;
 }
 .close img{width:40px;height:40px;}
 
-#menu.open{right:0px;}
+#menu.open{right: 0px;}
 #menu{
-    font-family:'KoPubDotum';    
     width: 30%;height: 100%;
     position: fixed;
     top: 0px;right: -31%;
@@ -80,16 +82,14 @@ html.open{overflow: hidden;}
     -moz-transition: All 0.2s ease;
     -o-transition: All 0.2s ease;
 }
-#menu nav{font-family:'KoPubDotum'}
+#menu nav{}
 #menu nav ul{text-align:left;font-size: 28px;margin-left: 50px;margin-top:50px;}
-/* #menu nav ul li{margin-top:30px;} */
+#menu nav ul li{margin-top:30px;}
 #menu nav ul .menu_icon_list_container{display:flex;margin-top:0;margin-left:0;}
 #menu nav ul .menu_icon_list_container li{color:#ff8989;font-size:20px;}
 #menu nav ul .menu_icon_list_container .menu_icon_list{margin-left:0;text-align:center;}
 #menu nav ul .menu_icon_list_container .menu_icon_list img{width:40px;height:40px;}
 #menu nav ul .menu_icon_list_container .menu_icon_list li{margin-right:54px;}
-#menu nav ul .menu_icon_list_container .menu_icon_list li a:link{color:#ff8989;}
-#menu nav ul .menu_icon_list_container .menu_icon_list li a:visited{color:#ff8989;}
 #menu nav ul li:nth-of-type(1){font-size:18px;}
 #menu nav ul li:nth-of-type(3){font-size:22px;}
 #menu nav ul li:nth-of-type(4){margin-top:66px;}
@@ -115,44 +115,28 @@ html.open{overflow: hidden;}
 }
 
 .s_icon{width:20px;height:20px;}
+#nav_alarm{color:#fff;}
 
 
 
 /* media query */
-/* 키오스크 */
-@media screen and (max-width:1080px){
+/* 13인치 모니터 */
+@media screen and (max-width:1280px){
+    .close{top:4%;right:15%;}
+    .close img{width:32px;height:32px;}
+
+    #menu{width:35%;right:-36%;}
+    #menu nav ul{margin-top:0;margin-left:40px;}
+    #menu nav ul .menu_icon_list_container .menu_icon_list li{margin-right:50px;}
+    #menu nav ul .menu_icon_list_container ul li{margin-top:20px;}
+}
+
+/* 갤럭시  s6,노트 4,노트 5 */
+@media screen and (max-width:720px){
+    html,body{min-width:800px;}
+}
+
+/* 아이폰 6 */
+@media screen and (max-width:375px){
     #menu{width:100%;right:-100%;}
-    #menu nav ul{
-        /* margin-top:30px; */
-        font-size:60px;margin-left:100px;margin-top:80px;
-    }
-    /* #menu nav ul li{margin-top:;} */
-    /* #menu nav ul li{margin-top:60px;} */
-    #menu nav ul li:nth-of-type(1){font-size:40px;margin-top:-32px;color:#fff;}
-    /* #menu nav ul li:nth-of-type(1) img{margin-top:10px;} */
-    #nav_name{margin-top:100px;}
-    /* #menu nav ul li:nth-of-type(2){margin-top:50px;} */
-    #menu nav ul li:nth-of-type(3){font-size:40px;margin-top:50px;}
-    #menu nav ul li:nth-of-type(4){margin-top:200px;}
-    #menu nav ul li:nth-of-type(5){margin-top:100px;}
-    #menu nav ul li:nth-of-type(7){margin-top:100px;}
-    #menu nav ul li:nth-of-type(10){margin-top:100px;margin-bottom:150px;}
-    #menu nav ul .nav_sub{font-size:46px;margin-top:50px;}
-
-    
-    /* #menu nav ul .menu_icon_list_container{margin-left:60px;} */
-    #menu nav ul .menu_icon_list_container ul li{font-size:46px;}
-    /* #menu nav ul .menu_icon_list_container ul li:nth-of-type(1){margin-top:50px;} */
-    #menu nav ul .menu_icon_list_container li{margin-top:0;}
-    #menu nav ul .menu_icon_list_container .menu_icon_list img{width:90px;height:90px;}
-    #menu nav ul .menu_icon_list_container .menu_icon_list li{margin-top:40px;}
-    #menu nav ul .menu_icon_list_container .menu_icon_list li{margin-right:150px;}
-    #menu nav ul .menu_icon_list_container .menu_icon_list li:nth-of-type(3){margin-right:0;}
-    /* #menu nav ul .menu_icon_list_container .menu_icon_list{height:196px;} */
-
-    .s_icon{width:44px;height:44px;}
-    #nav_alarm{position:relative;}
-    #nav_alarm #alarm{position:absolute;top:-5px;}
-    #nav_alarm #alarm_txt{margin-left:60px;}
-
 }

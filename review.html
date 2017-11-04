@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css"/>
-    <link rel="stylesheet" href="./css/layerpopup.css"/>
     <link rel="stylesheet" href="./css/review.css"/>
     <link rel="stylesheet" href="./css/icon.css"/>
     <link rel="stylesheet" href="./css/menu.css"/> 
@@ -26,7 +25,7 @@
                 </ul>
             </div>
             <div id="menu_container">
-                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div class="btn"><img src="img/menu.png" alt="메뉴" id="btn_img"></div>
                 <div onclick="history.back();" class="page_cover"></div>
                 <div id="menu">
                     <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
@@ -39,8 +38,8 @@
                             <li class="nav_title">프로젝트 소개</li>
                             <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
                             <li class="nav_title">취미 분석</li>
-                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
-                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
                             <li><a href="review.html">후기 게시판</a></li>
                             <ul class="menu_icon_list_container">
                                 <li>
@@ -51,8 +50,8 @@
                                 </li>
                                 <li>
                                     <ul class="menu_icon_list">
-                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
-                                        <li><a href="reservation.html">예약현황</a></li>
+                                        <li><img src="img/reservation.png" alt=""></li>
+                                        <li>예약하기</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -101,7 +100,7 @@
             <h2>프리미엄 후기<h6>최신순 | 추천순 | 조회순</h6></h2> 
             <div class="bottom_list_container">
                 <h3>NO.110</h3> 
-                <ul class="bottom_list" id="bottom_list01">                                
+                <ul class="bottom_list">                                
                     <li><img src="img/list_box01.png" alt="프랑스 자수"></li>
                     <li>
                         <ul class="bottom_list_text">
@@ -113,22 +112,6 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
-            <div class="layer">
-                <div class="bg"></div>
-                <div id="layer2" class="pop-layer">
-                    <div class="pop-container">
-                        <div class="pop-conts">
-                            <!--content //-->
-                            <div class="btn-r">
-                                <a href="#" class="cbtn"><img src="img/detail_page/popup_close_bt.png" alt=""></a>
-                            </div>
-                            <div class='popup_review'>
-                                <img src="img/review/popup_review.png" alt="">
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="bottom_list_container">   
                 <h3>NO.109</h3>                    
@@ -248,55 +231,6 @@ $(window).ready(function(){
             $("#menu,.page_cover,html").removeClass("open");
         }
     };
-
-    // layer-popup
-    $('#bottom_list01').click(function(){
-        $('section').css({'overflow':'hidden'});
-        layer_open('layer2');
-        return false;
-    })
-    function layer_open(el){
-        var temp = $('#' + el);
-        var bg = temp.prev().hasClass('bg');    //dimmed 레이어를 감지하기 위한 boolean 변수
-        var confirm2 = temp.prev().hasClass('confirm2');
-        if(bg){
-            $('.layer').fadeIn();   //'bg' 클래스가 존재하면 레이어가 나타나고 배경은 dimmed 된다.
-        }else{
-            temp.fadeIn();
-        }         
-        // 화면의 중앙에 레이어를 띄운다.
-        if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
-            else temp.css('top', '0px');
-        if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-'+temp.outerWidth()/2+'px');
-            else temp.css('left', '0px');
-
-        temp.find('a.cbtn').click(function(e){
-            $('section').css({'overflow':''});
-            if(bg){
-                $('.layer').fadeOut(); //'bg' 클래스가 존재하면 레이어를 사라지게 한다.
-            }else{
-                temp.fadeOut();
-            }
-            e.preventDefault();
-        });
-
-        temp.find($('.confirm2')).click(function(e){
-            if(bg){
-                $('.layer').fadeOut();
-                $('section').css({'overflow':''});
-            }else{
-                temp.fadeOut();
-                $('section').css({'overflow':''});
-            }
-            e.preventDefault();
-        });
-            
-        $('.layer .bg').click(function(e){  //배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
-            $('.layer').fadeOut();
-            e.preventDefault();
-            $('section').css({'overflow':''});
-        });
-    }   
 });
 </script>
 </body>

@@ -46,7 +46,7 @@ ul,li{list-style:none;}
 /*--------------------header------------------- */
 
 header{width:100%;background-color:black;}
-header .nav{position:fixed;z-index:3;width:90%;padding:2.5% 5% 2.5% 5%;background-color:#e8e8e8;}
+header .nav{position:fixed;z-index:3;width:90%;padding:1.2% 5%;background-color:#e8e8e8;}
 header .nav #home{float:left;width:15%;}
 header .nav #home img{width:52px;height:52px;}
 
@@ -128,10 +128,15 @@ section{width:100%;}
 .new{border-radius:8px 8px 8px 8px;background-color:#f26c4f;padding:6px 10px;color:#fff;font-size:18px;position:absolute;bottom:30px;right:0;}
 /* .box{border:3px solid #ebebeb;} */
 
-/* media query */
-/* 키오스크 */
-@media screen and (max-width:1080px){
-    #review_main{width:96%;}
 
-    #review_main_bottom h6{right:4%;}
-}    
+
+/* media query */
+/* 13인치 모니터 */
+@media screen and (max-width:1280px){
+    header .nav #home img{width:42px;height:42px;}
+    .nav #search ul li #search_text{height:32px;}
+    .nav #search ul li #search_img{width:32px;height:32px;}
+    #btn_img{width:32px;height:32px;float:right;}
+
+    
+}

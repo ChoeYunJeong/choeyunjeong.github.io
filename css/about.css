@@ -44,7 +44,7 @@ body::-webkit-scrollbar{display:none;}
 
 /*--------------------header------------------- */
 header{width:100%;}
-header .nav{position:fixed;z-index:3;width:90%;padding:2.5% 5% 2.5% 5%;}
+header .nav{position:fixed;z-index:3;width:90%;padding:1.2% 5%;}
 header .nav #home{float:left;width:15%;}
 header .nav #home img{width:52px;height:52px;}
 
@@ -199,7 +199,6 @@ section #main #button{position: absolute;bottom:5%;}
 #foot{background-color:#f3f3f3;height: 200px;}
 #foot h1{font-size:30px;color:#ed6b6b;text-align: center;}
 #foot a{
-    display:inline-block;
     margin-top: 40px;
     display: flex;
     text-align: center;
@@ -211,51 +210,40 @@ section #main #button{position: absolute;bottom:5%;}
 #foot a:visited{color:#fff;}
 #foot a h6{
     display:inline-block;
-    border-radius:30px;font-size:38px;
-    padding:12px 50px;
+    border-radius:20px;font-size:18px;
+    padding:9px 38px 9px 38px;
     background:linear-gradient(to right, #ffd259, #ed6b6b);
     font-weight:100;
 }
 
 
 /* media query */
-/* 키오스크 */
-@media screen and (max-width:1080px){
-    section #main #main_box{padding-right:38px;}
-    section #main #main_box h1{font-size:80px;line-height:98px;padding-top:70px;}
-    section #main #main_box p{font-size:36px;line-height:56px;}
-    section #main #main_box h6{font-size:34px;line-height:54px;}
-    section #main #main_box h3{right:30px;bottom:50px;}
-    section #main #main_box h3 img{width:230px;height:160px;}
-    /* a위치 해주기 */
-    section #main #button a{width:50px;height:50px;}
-    section #main #button a img{width:50px;height:50px;}
+/* 13인치 모니터 */
+@media screen and (max-width:1280px){
+    header .nav #home img{width:42px;height:42px;}
+    .nav #search ul li #search_text{height:32px;}
+    .nav #search ul li #search_img{width:32px;height:32px;}
+    #btn_img{width:32px;height:32px;float:right;}
+
+
+    #content #content_top{padding-top:150px;}
+    .name{margin-top:33px;}
+
     
+}
 
-    /* #content */
-    .name{margin-right:0;}
-    #content #content_top h1{font-size:40px;}
-    #content #content_bottom{display:block;}
-    #content #content_box01{display:inline-block;width:500px;}
-    /* box02밑에다가 취미분석바로가기 넣기 html수정 */
-    #content #content_box02{display:inline-block;width:500px;}
-    #content #content_box03{display:inline-block;width:500px;}
+/* HP 모니터 */
+@media screen and (min-width:1680px){
+    #content #content_top{padding-top:250px;text-align:center;}
+}
 
-    #content #analysis h6{font-size:24px;}
 
-    .name h1{font-size:36px;}
-    .name p{font-size:24px;line-height:37px;}
-    .name h2{padding-bottom:20px;font-size:40px;}
-    .name img{width:214px;height:140px;padding-top:30px;}
+/* 갤럭시  s6,노트 4,노트 5 */
+@media screen and (max-width:720px){
+    html,body{min-width:800px;}
+}
 
-    /* process */
-    #process{height:1720px;}
-    #process #process_top{padding-top:300px;}
-    #process #process_top h1{font-size:40px;}
-    .title{font-size:34px;}
-    .desc{line-height:50px;}
-
-    /* footer */
-    #foot{padding-bottom:100px;}
-    #foot h1{font-size:50px;}
-}    
+/* 아이폰 6 */
+@media screen and (max-width:375px){
+    /* html,body{min-width:800px;} */
+}

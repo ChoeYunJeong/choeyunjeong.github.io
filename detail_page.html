@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/layerpopup.css"/>
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/respond.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.1/SmoothScroll.min.js"></script> -->
     <title>소소한 일탈</title>
 </head>
 <body>
@@ -27,7 +26,7 @@
                 </ul>
             </div>
             <div id="menu_container">
-                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div class="btn"><img src="img/menu.png" alt="메뉴" id="btn_img"></div>
                 <div onclick="history.back();" class="page_cover"></div>
                 <div id="menu">
                     <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
@@ -40,8 +39,8 @@
                             <li class="nav_title">프로젝트 소개</li>
                             <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
                             <li class="nav_title">취미 분석</li>
-                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
-                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
                             <li><a href="review.html">후기 게시판</a></li>
                             <ul class="menu_icon_list_container">
                                 <li>
@@ -52,8 +51,8 @@
                                 </li>
                                 <li>
                                     <ul class="menu_icon_list">
-                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
-                                        <li><a href="reservation.html">예약현황</a></li>
+                                        <li><img src="img/reservation.png" alt=""></li>
+                                        <li>예약하기</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -121,7 +120,7 @@
                             </div>
                             <div id="calendar"></div>
                         </div>
-                        <div class="wrap2" style="display:none">
+                        <div class="wrap2">
                             <div id="time">
                                 <span class="bar">bar</span><h1>시간</h1>
                                 <ul id="time_list">
@@ -183,7 +182,7 @@
                                     <li><a href="" id="plus" class="mi_bt">+</a></li>
                                 </ul>
                                 <div id="amount_bottom">
-                                    <h2>20,000원</h2>
+                                    <h2>원</h2>
                                     <span class="pay">결제</span>
                                 </div>
                             </div>
@@ -217,6 +216,7 @@
                                 <li><span class="confirm2">확인</span></li>
                             </ul>
                         </div>
+    
                         <!--// content-->
                     </div>
                 </div>
@@ -718,14 +718,6 @@ $(window).ready(function(){
             // $('#'+id).addClass('selected');
         }
     });
-
-
-
-
-
-
-
-
     
     // var listbox01 = 20000;
     // var listbox02 = 50000;
@@ -798,23 +790,6 @@ $(window).ready(function(){
             $('#number_updown').text(num);
         });
     // });
-
-    // 달력 클릭시 넘어가기
-    var checkcount = 0;
-
-    $('td').click(function(){
-        var $td = $(this);
-        $td.addClass('calendar_c');
-        checkcount++;
-        if(checkcount === 3){
-            $('.wrap2').css({'display':''});
-            $('.wrap').css({'display':'none'});
-            $('.payment').css({'display':'none'});
-        }
-    })
-
-
-
 
     // 결제
     $('.pay').click(function(){

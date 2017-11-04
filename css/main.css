@@ -47,8 +47,8 @@ body::-webkit-scrollbar{display:none;}
 
 ul,li{list-style:none;}
 .menu_bar_bg{background-color:#ed6b6b;}
-a:link{text-decoration:none;color:#fff;}
-a:visited{color:transparent;color:#000;}
+a:link{text-decoration:none;color:#000;}
+a:visited{color:transparent}
 a:hover{cursor:pointer;}
 a:active{cursor:pointer;}
 
@@ -149,10 +149,10 @@ width: 228px;height: 38px;
 
 /* ------------main 02 -------------- */
 
-#main_02{font-family:'KoPubDotum';}
+#main_02{}
 #main_02 #main02_text{text-align: right;padding-top: 26%;margin-right: 50px;}
 #main_02 #main02_text h1{font-size:60px;line-height:78px;}
-#main_02 #main02_text p{font-size:26px;line-height:38px;margin-top:30px;font-weight:300;font-family:'KoPubDotum';}
+#main_02 #main02_text p{font-size:26px;line-height:38px;margin-top:30px;font-weight:300;}
 #main_02 a{margin-top: 200px;}
 #main_02 a #hobbyanal_bt{
     border: 1px solid #ffd259;
@@ -179,7 +179,7 @@ width: 228px;height: 38px;
     background-size:cover;
 }
 #main_bt_anal #hobby_anal_main{width:70%;height:600px;background-color:#fff;margin-left: auto;margin-right:auto;margin-bottom:200px;}
-#main_bt_anal #hobby_anal_main #main_yellow_border{width:70%;height:70%;border:5px solid #ffd259;margin-left:auto;margin-right:auto;position:relative;}
+#main_bt_anal #hobby_anal_main #main_yellow_border{width:70%;height:70%;border:5px solid #ffd259;margin-left:auto;margin-right:auto;}
 #main_bt_anal #hobby_anal_main #main_yellow_border h1{font-size:40px;line-height:48px;margin-top:102px;font-weight:700;}
 #main_bt_anal #hobby_anal_main #main_yellow_border p{font-size:20px;line-height:28px;margin-top:30px;}
 #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon{
@@ -204,7 +204,8 @@ width: 228px;height: 38px;
 }    
 #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon img{padding-left:40px;padding-right: 40px;}
 #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_arrow{
-    position:absolute;bottom:-40px;left:47%;
+    
+    /* position: absolute; */
     /* width:40px;height:40px; */
     
 }
@@ -270,18 +271,18 @@ width: 228px;height: 38px;
 #testbox_container03_bottom ul li:nth-of-type(4){margin-right:0px;}
 
 /* radio button */
-/* input[type="radio"]:not(old){
+input[type="radio"]:not(old){
     width:24px;opacity:0;
 }
-input[type="radio"]:not(old) + label{
+/* input[type="radio"]:not(old) + label{
     display:inline-block;
     background:url('../img/radio_button.png') no-repeat;
     background-attachment:inherit;
     width:24px;height:24px;
 
 } */
-/* input[type="radio"]:not(old){display:none;}
-input[type="radio"]:not(old)+label span{display:inline-block;width:24px;height:24px;border:4px solid #d7d7d7;border-radius:10px;margin-right:20px;}
+/* input[type="radio"]:not(old){display:none;} */
+/* input[type="radio"]:not(old)+label span{display:inline-block;width:24px;height:24px;border:4px solid #d7d7d7;border-radius:10px;margin-right:20px;}
 input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;height:24px;background-color:#7d7d7d;border:4px solid #7d7d7d;border-radius:10px;} */
 
 
@@ -307,13 +308,13 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
     background-size:cover;padding-top:150px;
 }
 #hobby_anal_result #hobby_anal_result_top_container{
-    width:70%;height:600px;background-color:#fff;margin-left:auto;margin-right:auto;
-    border-radius:20px;position: relative;
-    box-shadow:20px 20px 20px #c0c0c0;
+    width:70%;height:550px;background-color:#fff;margin-left:auto;margin-right:auto;
+    border-radius:20px;
+    box-shadow:20px 20px 20px #c0c0c0;position:relative;
 }
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top{}
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top h1{font-size:38px;font-weight:700;padding-bottom:10%;}
-#hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top p{font-size:30px;font-weight:700;padding-bottom:10%;line-height:40px;} 
+#hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top p{font-size:30px;font-weight:700;padding-bottom:10%;} 
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top ul{padding-bottom:10%;position:relative;}
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top ul li{}
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top ul li:nth-of-type(2){width:50%;height:20px;position:absolute;left:25%;}
@@ -322,18 +323,17 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top h2{font-size:22px;color:#4d4d4d;font-weight:300;}
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top #hobby_anal_result_arrow{position:absolute;bottom:-20px;}
 #hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top #hobby_anal_result_arrow a{display:inline-block;}
-#hobby_anal_result #hobby_anal_result_top_container #hobby_anal_result_top ul li:nth-of-type(2)#tendency{left:5%}
-#tendency{color:#ed6b6b;font-size:22px;color:#ed6b6b;left:5%}
+#tendency{color:#ed6b6b;font-size:22px;color:#ed6b6b;}
 .graph{background-color:#ed6b6b;font-size:0;color:transparent;text-indent:-9999;display:block;border-radius:20px;}
 
 #hobby_anal_result #hobby_anal_result_bottom_container{
-    width:70%;height:600px;margin-top:150px;position:relative;
+    width:70%;height:600px;margin-top:150px;position: relative;
     background-color:#fff;margin-left:auto;margin-right:auto;
     border-radius:20px;box-shadow:20px 20px 20px #c0c0c0;
 }
 #hobby_anal_result #hobby_anal_result_bottom_container #hobby_anal_result_bottom{}
-#hobby_anal_result #hobby_anal_result_bottom_container #hobby_anal_result_bottom h1{font-size:36px;text-align:center;margin-bottom:80px;padding-top:80px;}
-#hobby_anal_result #hobby_anal_result_bottom_container #hobby_anal_result_bottom .list{left:56px;}
+#hobby_anal_result #hobby_anal_result_bottom_container #hobby_anal_result_bottom h1{font-size:36px;text-align:center;margin-bottom:80px;padding-top:70px;}
+#hobby_anal_result #hobby_anal_result_bottom_container #hobby_anal_result_bottom .list{left:5%;}
 #hobby_anal_result_bottom .list .list_box_it .list_text ul li h2{text-align:left;}
 #hobby_anal_result_bottom .list .list_box_it .list_text ul li:nth-of-type(2){text-align:left;}
 
@@ -346,8 +346,6 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
     background:linear-gradient(to right, #ffd259, #ed6b6b);
     font-weight:100;color:#fff;margin-right:50px;
 }
-#hobby_anal_result #hobby_anal_result_footer h6 a:link{text-decoration:none;color:#fff;}
-#hobby_anal_result #hobby_anal_result_footer h6 a:visited{text-decoration:none;color:#fff;}
 #hobby_anal_result #hobby_anal_result_footer #hobby_anal_result_footer_container h6:nth-of-type(2){
     display:inline-block;
     border-radius:20px;font-size:20px;
@@ -355,8 +353,15 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
     background:linear-gradient(to right, #ffd259, #ed6b6b);
     font-weight:100;color:#fff;margin-right:0px;
 }
-.cover_img{opacity:0.2;}
- 
+#a_list_container3{
+    position:relative;
+    width:90%;height:330px;background-color:#fff;
+    /* display: flex;justify-content: center;align-items: center; */
+    margin-left: auto; margin-right: auto;margin-top: 10px;padding-top: 1px;
+}
+
+.cover_img{opacity:0.5;}
+#tendency{background-color:transparent;}
 
 /* --------------------- myhobby ----------------- */
 ul,li{list-style: none;}
@@ -372,13 +377,13 @@ span img{display:block;margin-left: auto;margin-right: auto;}
     background-color: #ed6b6b;
 }
 #myhobby_list{left:56px;}
-.list{display:inline-block;margin-top:30px;width:870px;position: absolute;overflow:hidden;z-index:40;height:400px;
+.list{display:inline-block;margin-top:30px;width:870px;position: absolute;overflow:hidden;z-index:40;height: 100%;
     left:20px;
     /* overflow:hidden; */
 }
 #a_list_container2{
-    position: relative;
-    width: 904px;height: 430px;background-color: #fff;
+    position:relative;
+    width:904px;height:430px;background-color:#fff;
     /* display: flex;justify-content: center;align-items: center; */
     margin-left: auto; margin-right: auto;margin-top: 10px;padding-top: 1px;
 }
@@ -426,8 +431,8 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 #around .list_box_it{background-color: #fff;}
 #around .bar{margin-top: 14px;}
 
-.prev_bt img{position:absolute;left:-20px;width:36px;height:36px;top:50%;z-index:50;}
-.next_bt img{position:absolute;width:36px;height:36px;right:-20px;top:50%;z-index:50;}
+.prev_bt img{position:absolute;left:-20px;width:36px;height:36px;top:50%}
+.next_bt img{position:absolute;width:36px;height:36px;right:-20px;top:50%}
 
 /* ---------------------collection----------------------- */
 
@@ -457,7 +462,7 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 
 /* --------------footer------------ */
 #footer{}
-#f_container{background-color: #f5f5f5;width:1080px;height: 230px;margin-left: auto;margin-right: auto;position:relative;}
+#f_container{background-color: #f5f5f5;width: 904px;height: 230px;margin-left: auto;margin-right: auto;position:relative;}
 #f_container_box_top{display: flex;font-size: 14px;margin-top:-10px;}
 #f_container_box_top img{width:36px;height:36px;}
 #f_container_box_top h1{font-size:14px;font-weight:800;line-height:30px;}
@@ -491,7 +496,6 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 .top_bt ul li{float:left;margin-top:20px;}
 .top_bt ul a{}
 .top_bt img{margin-left:4px;padding-top:4px;width:14px;height:14px;}
-/* .top_bt:nth-of-type(2){margin-right:30px;} */
 
 
 
@@ -501,63 +505,111 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 
 
 /* media query */
-/* 키오스크 */
-@media screen and (max-width:1080px){
-    a:link{color:#000;}
-    /* main */
-    #main h1{font-size:80px;line-height:98px}
-    #main_text{font-size:36px;line-height:48px;}
-    #main a{width:400px;}
-    #main a #about_bt{width:400px;height:50px;font-size:40px;padding-top:20px;border-radius:60px 60px 60px 60px;margin-top: 100px;}
-    #main #main_arrow{margin-top:200px;width:60px;}
-    #main #main_arrow_img{width:60px;height:60px;}
-    
-    /* main_02 */
-    #main_02 #main02_text h1{font-size:80px;line-height:98px;}
-    #main_02 #main02_text p{font-size:36px;line-height:48px;}
-    #main_02 #main02_text{padding-top:56%;}
-    #main_02 a{margin-top:350px;}
-    #main_02 a #hobbyanal_bt{width:400px;height:50px;font-size:40px;padding-top:20px;border-radius:60px 60px 60px 60px;margin-bottom:0;}
-    #hobbyanal_go{display:inline-block;margin:0 28%;}
+/* 13인치 모니터 */
+@media screen and (max-width:1280px){
+    header .nav #home img{width:42px;height:42px;}
+    .nav #search ul li #search_text{height:32px;}
+    .nav #search ul li #search_img{width:32px;height:32px;}
+    #btn_img{width:32px;height:32px;float:right;}
 
-    /* main_bt_anal */
-    #main_bt_anal{padding-top:0;}
-    #main_bt_anal #hobby_anal_main{width:100%;height:1920px;}
-    #main_bt_anal #hobby_anal_main #main_yellow_border{border:8px solid#ffd259}
-    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:180px;width:400px;}
-    /* icon 바꿔라 */
-    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back img{width:300px;}
-    #main_bt_anal #hobby_anal_main #main_yellow_border h1{font-size:70px;line-height:98px;margin-top:50%;}
-    #main_bt_anal #hobby_anal_main #main_yellow_border p{font-size:30px;line-height:60px;}
-    /* #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_arrow{display:inline-block;margin-top:63%;} */
-    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_arrow a{margin-top:0;width:60px;height:60px;}
-    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_arrow img{width:60px;height:60px;}
+    #main h1{font-size:48px;line-height:56px}
+    #main_text{font-size:22px;line-height:34px;}
 
-    /* bar */
-    .bar{width:80px;height:6px;}
+    #main_02 #main02_text h1{font-size:48px;line-height:56px;}
+    #main_02 #main02_text p{font-size:22px;line-height:34px;}
 
-    /* .test_text */
-    .test_text{width:86%;}
-    .test_text h1{font-size:50px;}
-    .test_text h2{width:180px;height:36px;font-size:30px;padding-top:9px;border-radius:60px 60px 60px 60px;}
-    .test_text h3{font-size:30px;}
+    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:160px;}
+    #hobby_anal_icon #title_icon_back img{width:219px;height:90px;}
+    .test_text{padding-top:150px;}
 
-    /* result */
-    #hobby_anal_result_bt{width:86%;}
-    #hobby_anal_result_bt p{width:400px;height:50px;font-size:40px;color:#fff;;padding-top:20px;border-radius:60px 60px 60px 60px;}
-    #hobby_anal_result #hobby_anal_result_top_container{width:86%;}
-    #hobby_anal_result #hobby_anal_result_bottom_container{width:86%;}
-    #hobby_anal_result{padding-top:250px;}
-    #hobby_anal_result #hobby_anal_result_footer{padding-top:150px;padding-bottom:150px;}
+    #myhobby h1{font-size: 48px;}
+    #myhobby p{font-size:18px;}
 
-    /* #myhobby */
-    #myhobby{min-height:0;margin-bottom:80px;}
+    #around h1{font-size:48px;}
+    #around p{font-size:18px;}
 
-    /* around */
-    #around{min-height:0;margin-bottom:80px;}
+    #collection h1{font-size:48px;}
+    #collection p{font-size:18px;}
 
-    /* #collection */
-    #collection{min-height:0;margin-bottom:200px;}
+    #a_list_container3{width:100%;}
+}
 
-    /* .cover_img{opacity:} */
+/* HP 모니터 */
+@media screen and (min-width:1680px){
+    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:260px;}
+}
+
+/* 갤럭시  s6,노트 4,노트 5 */
+@media screen and (max-width:720px){
+    html,body{min-width:800px;}
+}
+
+/* 아이폰 6 */
+@media screen and (max-width:375px){
+    /* html,body{min-width:800px;} */
+    header .nav{width:90%;padding:35px 10%;}
+    header .nav #home img{width:76px;height:70px;}
+    header .nav #home{width:18%;}
+    .nav #search{width:67%;}
+    .nav #search ul{position:relative;width:100%;}
+    .nav #search ul #search_i{position:absolute;left:0;}
+    .nav #search ul li #search_text{height:70px;background-color:transparent;box-shadow:none;border-bottom:3px solid #fff;border-radius:0;}
+    #menu_container{width:10%;}
+    .btn{float:inherit;display:block;}
+
+
+    #main h1{font-size:67px;text-align:left;line-height:90px;padding-top:60%;}
+    #main_text{font-size:36px;line-height:60px;text-align:left;}
+    #main a{width:330px;height:60px;}
+    #main a #about_bt{font-size:30px;padding:20px 42px;}
+    #main p{margin-bottom:15%;margin-top:15%;}
+    #main #main_arrow{width:70px;height:70px;}
+    #main_arrow img{width:70px;height:70px;}
+
+    #main_02 #main02_text h1{font-size:56px;padding-top:45%;}
+    #main_02 #main02_text p{font-size:30px;line-height:50px;margin-top:100px;}
+    #main_02 a{margin-top:25%;padding-bottom:25%;}
+    #main_02 a #hobbyanal_bt{font-size:30px;padding:20px 42px;border-radius:30px;margin-bottom:21%;}
+
+    #main_bt_anal #hobby_anal_main{width:90%;}
+    .test_text{width:90%;}
+    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:100px;}
+    .test_text h3{font-size:28px;}
+
+    #hobby_anal_result_bt{width:90%;}
+    #hobby_anal_result_bt p{font-size:20px;padding:10px 60px;}
+
+    #a_list_container2{width:750px;}
+
+
+    .list{height:912px;width:700px;margin-top:50px;}
+    .list .list_box{float:inherit;margin-right:0;margin-bottom:90px;}
+    .list .list_box_it{width:592px;height:210px;}
+    .list .list_box_it .list_img{width:292px;height:210px;float:left;}
+    .list .list_box_it .list_img img:nth-of-type(1){width:292px;height:210px;}
+    .list .list_box_it .list_text{width:270px;height:210px;margin-left:20px;display:inline-block;margin-right:0;}
+    .list .list_box_it .list_text ul li h2{font-size:28px;}
+    .list .list_box_it .list_text ul li{font-size:18px;margin-bottom:18px;}
+    .list .list_box_it .list_text ul li:nth-of-type(2){margin-top:50px;}
+
+
+    /* #myhobby{display:none;} */
+    #myhobby h1{font-size:60px;}
+    #myhobby p{font-size:24px;margin-top:40px;}
+
+
+    #around{margin-top:600px}
+    #around h1{font-size:60px;}
+    #around p{font-size:24px;margin-top:40px;}
+    /* #around .list_box:nth-of-type(4){display:none;} */
+    #a_list_container{background-color:transparent;width:100%;}
+    .list .list_box_container{width:700px;}
+    .next_bt{display:none;}
+    .prev_bt{display:none;}
+
+
+
+
+    #collection{display:none;}
+    #footer{display:none;}
 }

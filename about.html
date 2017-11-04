@@ -29,7 +29,7 @@
                 </ul>
             </div>
             <div id="menu_container">
-                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div class="btn"><img src="img/menu.png" alt="메뉴" id="btn_img"></div>
                 <div onclick="history.back();" class="page_cover"></div>
                 <div id="menu">
                     <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
@@ -42,8 +42,8 @@
                             <li class="nav_title">프로젝트 소개</li>
                             <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
                             <li class="nav_title">취미 분석</li>
-                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
-                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
                             <li><a href="review.html">후기 게시판</a></li>
                             <ul class="menu_icon_list_container">
                                 <li>
@@ -54,8 +54,8 @@
                                 </li>
                                 <li>
                                     <ul class="menu_icon_list">
-                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
-                                        <li><a href="reservation.html">예약현황</a></li>
+                                        <li><img src="img/reservation.png" alt=""></li>
+                                        <li>예약하기</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -80,9 +80,9 @@
                     </h1>
                     <p>
                         당신의 취미는 안녕하신가요?<br />
-                        바쁜 사회속에서 현대인들은 자신의 취미조차 <br />제대로 즐기지 못하고 살아가고 있습니다.<br />
-                        새로운 취미를 시작할 때, 나에게 맞는 취미가<br /> 무엇인지 모르거나 찾기 막막하다면
-                        소소한 일탈을 <br />통해 당신만의 취미를 만나보세요.
+                        바쁜 사회속에서 현대인들은 자신의 취미조차 제대로 즐기지 못하고 살아가고 있습니다.<br />
+                        새로운 취미를 시작할 때, 나에게 맞는 취미가 뭔지 모르거나 찾기 막막하다면<br />
+                        소소한 일탈을 통해 당신만의 취미를 만나보세요.
                     </p>
                     <h6>
                         <br />
@@ -128,10 +128,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div id="analysis">
-                        <span class="row_bar">bar</span>
-                        <a href="index.html#main_02"><h6>취미분석 바로하기</h6></a>
-                    </div>
                 </div>
                 <div id="content_container03" class="name">
                     <h2>03</h2>
@@ -149,6 +145,10 @@
                     </div>
                 </div>
             </div>
+            <div id="analysis">
+                    <span class="row_bar">bar</span>
+                    <a href="index.html#main_02"><h6>취미분석 바로하기</h6></a>
+                </div>
         </div>
         <div id="process">
             <div id="process_top">
@@ -234,20 +234,20 @@
         // $('.column-right').hide();
         $(function () {
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 3300) {
+                if ($(this).scrollTop() > 1500) {
                     box1.fadeIn();
                 } else {
                     // $('.column-left').fadeOut();
                 }
-                if ($(this).scrollTop() > 3500) {
+                if ($(this).scrollTop() > 2000) {
                     box2.fadeIn();
                 } else {
                     // $('.column-right').fadeOut();
                 }
-                if ($(this).scrollTop() > 3600) {
+                if ($(this).scrollTop() > 2200) {
                     box3.fadeIn();
                 }
-                if ($(this).scrollTop() > 3700) {
+                if ($(this).scrollTop() > 2400) {
                     box4.fadeIn();
                 }
             })

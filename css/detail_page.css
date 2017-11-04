@@ -45,7 +45,7 @@ ul,li{list-style:none;}
 /*--------------------header------------------- */
 
 header{width:100%;background-color:black;}
-header .nav{position:fixed;z-index:3;width:90%;padding:2.5% 5% 2.5% 5%;background-color:#e8e8e8;}
+header .nav{position:fixed;z-index:3;width:90%;padding:1.2% 5%;background-color:#e8e8e8;}
 header .nav #home{float:left;width:15%;}
 header .nav #home img{width:52px;height:52px;cursor:pointer;}
 
@@ -199,7 +199,7 @@ p{float:right;}
 
 
 /* calendar */
-.calendar_c{display:inline-block;border-radius:50%;background-color:#fde472;border:3px solid #fde472;padding-left:20px;padding-right:20px;}
+
 
 
 /* ------------footer--------- */
@@ -243,22 +243,35 @@ p{float:right;}
 #foot{align-items: flex-end;letter-spacing: 1px;}
 
 
-
 /* media query */
-/* 키오스크 */
-@media screen and (max-width:1080px){
+/* 13인치 모니터 */
+@media screen and (max-width:1280px){
+    header .nav #home img{width:42px;height:42px;}
+    .nav #search ul li #search_text{height:32px;}
+    .nav #search ul li #search_img{width:32px;height:32px;}
+    #btn_img{width:32px;height:32px;float:right;}
+
     /* detail_main_top */
-    section #detail_main_top{width:96%;}
-
+    section #detail_main_top{width:90%;}
+    
     /* detail_main_bottom */
-    #detail_main_bottom{width:96%;}
-
-    /* detail_review */
-    #detail_review_contentbox03 .contentbox03_list .contentbox03_listbox .listbox_name{margin-left:10%;}
-
-    /* detail_question */
-    #detail_question{padding-bottom:466px;}
+    #detail_main_bottom{width:90%;}
 
     /* footer */
-    #f_container{width:100%}
-}    
+    #f_container{width:90%}
+}
+
+/* HP 모니터 */
+@media screen and (min-width:1680px){
+    /* detail_main_top */
+    section #detail_main_top{width:90%;}
+    section #detail_main_top ul #detail_main_left_container img{width:90%;}
+    
+    /* detail_main_bottom */
+    #detail_main_bottom{width:90%;}
+
+    /* footer */
+    #f_container{width:90%}
+
+
+}

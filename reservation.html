@@ -18,7 +18,7 @@
     <header>
         <div class="nav">
             <div id="home">
-                <a href="index.html"><img src="img/about/home_icon_pink.png"></a>
+                <a href="index.html"><img src="img/about/home_icon.png"></a>
             </div>
             <div id="search">
                 <ul>
@@ -27,7 +27,7 @@
                 </ul>
             </div>
             <div id="menu_container">
-                <div class="btn"><img src="img/menu.png" alt="메뉴"></div>
+                <div class="btn"><img src="img/menu.png" alt="메뉴" id="btn_img"></div>
                 <div onclick="history.back();" class="page_cover"></div>
                 <div id="menu">
                     <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
@@ -40,8 +40,8 @@
                             <li class="nav_title">프로젝트 소개</li>
                             <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
                             <li class="nav_title">취미 분석</li>
-                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
-                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
+                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
                             <li><a href="review.html">후기 게시판</a></li>
                             <ul class="menu_icon_list_container">
                                 <li>
@@ -52,8 +52,8 @@
                                 </li>
                                 <li>
                                     <ul class="menu_icon_list">
-                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
-                                        <li><a href="reservation.html">예약현황</a></li>
+                                        <li><img src="img/reservation.png" alt=""></li>
+                                        <li>예약하기</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -74,17 +74,17 @@
             <h1>예약현황</h1>
             <h6>총 3개</h6>
             <div id="reservation_listbox01">
-                <h3>- 프랑스 자수</h3>
+                <h3>- 도자기 만들기</h3>
                 <span class="progress_bt">진행중</span>
                 <div class="list_box">
                     <ul class="list_box_it">
-                        <li class="list_img"><img src="img/list_box01.png"></li>
+                        <li class="list_img"><img src="img/list_box04.png"></li>
                         <li class="list_text">
                             <ul>
-                                <li><h2>프랑스 자수 배우기</h2></li>
-                                <li>가격  60,000원 부터</li>
-                                <li><span>서울특별시 영등포구 여의도동</span></li>
-                                <li><span>60km</span></li>
+                                <li><h2>도자기 만들기</h2></li>
+                                <li>가격  150,000원 부터</li>
+                                <li><span>경기도 의왕시 갈산동</span></li>
+                                <li><span>2km</span></li>
                                 <li>
                                     평점
                                     <ul class="star">
@@ -102,9 +102,9 @@
                         </li>
                     </ul>
                 </div>
-                <div class="date"><span>날짜</span><p>11월 20일, 22일, 24일</p></div>
+                <div class="date"><span>날짜</span><p>11월 16일, 8일, 10일</p></div>
                 <div class="time"><span>시간</span><p>오후 5시 ~ 오후 8시</p></div>
-                <div class="txt"><span>내용</span><p>토끼 파우치 제작</p></div>
+                <div class="txt"><span>내용</span><p>도자기 및 그릇 제작</p></div>
             </div>
             <div id="reservation_listbox02">
                 <h3>- 가죽 공예</h3>
@@ -135,22 +135,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="date"><span>날짜</span><p>11월 23일, 25일, 27일</p></div>
+                <div class="date"><span>날짜</span><p>10월 23,일 25일, 27일</p></div>
                 <div class="time"><span>시간</span><p>오후 2시 ~ 오후 5시</p></div>
                 <div class="txt"><span>내용</span><p>지퍼 카드 지갑 제작</p></div>
             </div>
             <div id="reservation_listbox03">
-                <h3>- 도자기 만들기</h3>
+                <h3>- 프랑스 자수</h3>
                 <span class="progress_bt">수강완료</span>
                 <div class="list_box">
                     <ul class="list_box_it">
-                        <li class="list_img"><img src="img/list_box04.png"></li>
+                        <li class="list_img"><img src="img/list_box01.png"></li>
                         <li class="list_text">
                             <ul>
-                                <li><h2>도자기 만들기</h2></li>
-                                <li>가격  150,000원 부터</li>
+                                <li><h2>프랑스 자수 배우기</h2></li>
+                                <li>가격  60,000원 부터</li>
                                 <li><span>서울특별시 영등포구 여의도동</span></li>
-                                <li><span>2km</span></li>
+                                <li><span>60km</span></li>
                                 <li>
                                     평점
                                     <ul class="star">
@@ -170,7 +170,7 @@
                 </div>
                 <div class="date"><span>날짜</span><p>10월 16일, 18일, 20일</p></div>
                 <div class="time"><span>시간</span><p>오후 5시 ~ 오후 8시</p></div>
-                <div class="txt"><span>내용</span><p>도자기 및 그릇 제작</p></div>
+                <div class="txt"><span>내용</span><p>토끼 파우치 제작</p></div>
             </div>
         </div>
     </section>
