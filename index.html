@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/main.css"/>
-    <link rel="stylesheet" href="./css/icon.css"/>
+    <!-- <link rel="stylesheet" href="./css/icon.css"/> -->
     <link rel="stylesheet" href="./css/menu.css"/> 
     <script type="text/javascript" src="./js/jquery.min.js"></script>
     <script type="text/javascript" src="./js/respond.min.js"></script>
@@ -239,9 +239,13 @@
             <div id="hobby_anal_result_top">
                <h1>분 석 결 과</h1>
                <p>
-                   000 님은<br />
+                   손님은<br />
                    <span class="tendency_result">조용함</span>을/를 즐길 줄 아는 사람입니다.
                </p>
+               <ul class="center">
+                    <li>성향</li>
+                    <li id="tendency" class="tendency_result">조용한</li>
+               </ul>
                <ul class="center">
                    <li>활동</li>
                    <li id="activity" class="graph"><span>percent</span></li>
@@ -251,10 +255,6 @@
                    <li>만들기</li>
                    <li id="activity2" class="graph"><span>percent</span></li>
                    <li class="text2">100%</li>
-               </ul>
-               <ul class="center">
-                    <li>성향</li>
-                    <li id="tendency" class="tendency_result">조용한</li>
                </ul>
                <h2>조용하고 감성적이며 만들 수 있는 취미를 찾고 계시는군요.</h2>
                <span id="hobby_anal_result_arrow"><a href=""><img src="img/hobby_main_title_bt.png" alt=""></a></span>
@@ -744,6 +744,7 @@
             $('#hobbyanal_bt').click(function(e){
                 if($('#main_bt_anal').is(":visible")){
                     $('#main_bt_anal').slideUp();
+                    $('#hobby_anal_result').slideUp();
                 }else{
                     $('#main_bt_anal').slideDown();
                 }
@@ -844,17 +845,19 @@
 
             // word 테스트3 클릭 시
             var $word_circle = $('.word_circle');
-             $word_circle.click(function(){
-                 var $circle = $(this), id = $circle.data('id');
-                 if($circle.hasClass('selected')){
-                    $circle.removeClass('selected');
-                    $circle.addClass('word_circle');
-                 }else{
-                    $circle.removeClass('word_circle');
-                    $circle.addClass('selected');
-                    $('#'+id).addClass('selected');
-                 }
-             });
+            $word_circle.click(function(){
+                var $circle = $(this);
+                if($circle.hasClass('word_circle') === true){
+                   $word_circle.removeClass('selected');
+                   $word_circle.addClass('word_circle');
+                   $circle.removeClass('word_circle');
+                   $circle.addClass('selected');
+                }else{
+                   $circle.removeClass('selected');
+                   $circle.addClass('word_circle');
+                }
+            });
+
             var $prev = $('#a_list_container').find('.prev_bt');
             var $next = $('#a_list_container').find('.next_bt');
             var cnt = 0;
