@@ -137,6 +137,31 @@ section{width:100%;}
     .nav #search ul li #search_text{height:32px;}
     .nav #search ul li #search_img{width:32px;height:32px;}
     #btn_img{width:32px;height:32px;float:right;}
+}
+/* 아이폰 6 */
+@media screen and (max-width:375px){
+    header .nav{width:91%;padding:35px 10%;}
+    header .nav #home img{width:76px;height:70px;}
+    header .nav #home{width:18%;}
+    .nav #search{width:67%;}
+    .nav #search ul{position:relative;width:100%;}
+    .nav #search ul #search_i{position:absolute;left:0;}
+    .nav #search ul li #search_text{height:60px;background-color:transparent;box-shadow:none;border-bottom:3px solid #fff;border-radius:0;}
+    .nav #search ul #search_t{width:100%;}
+    #menu_container{width:10%;}
+    .btn{float:inherit;display:block;}
 
-    
+    #review_main{width:90%;}
+    #review_main_bottom div:nth-of-type(3){clear:both;}
+    #review_main_bottom div:nth-of-type(5){display:none;}
+    #review_main_bottom div:nth-of-type(6){display:none;}
+    #review_main_bottom div:nth-of-type(7){display:none;}
+    #review_main_bottom div:nth-of-type(8){display:none;}
+    #review_main_bottom .bottom_list_container{display:block;float:left;width:auto;}
+    #review_main_bottom .bottom_list_container h3{font-size:32px;}
+    #review_main_bottom .bottom_list_container .bottom_list{margin-right:50px;}
+    #review_main_bottom .bottom_list_container ul .bottom_list_text{width:380px;font-size:25px;margin-left:10px;position:relative;}
+    #review_main_bottom .bottom_list_container ul .bottom_list_text li:nth-of-type(1){font-size:30px;}
+    .new{top:0;bottom:inherit;right:0px;font-size:28px;}
+    .bottom_list li:nth-of-type(1) img{width:440px;height:330px;}
 }

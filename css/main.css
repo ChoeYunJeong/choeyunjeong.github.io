@@ -55,7 +55,7 @@ a:active{cursor:pointer;}
 
 /*--------------------header------------------- */
 header{width:100%;}
-header .nav{position:fixed;z-index:90;width:90%;padding:2.5% 5% 2.5% 5%;}
+header .nav{position:fixed;z-index:90;width:90%;padding:1.5% 5%;}
 header .nav #home{float:left;width:15%;}
 header .nav #home img{width:62px;height:62px;}
 
@@ -100,6 +100,7 @@ section{height:100%;-webkit-overflow-scrolling:touch;}
 }
 #main #main_container{margin-top:auto;margin-bottom:auto;}
 #main h1{font-size:60px;font-weight:700;line-height:78px;padding-top:120px;margin-bottom:32px;}
+#main_arrow img{width:35px;height:35px;}
 
 .center{
     display: flex;
@@ -125,11 +126,10 @@ section{height:100%;-webkit-overflow-scrolling:touch;}
     display: flex;
     align-items: center;
     justify-content: center; 
-margin-top: 112px;
-width: 228px;height: 38px;
+    margin-top: 112px;
+    width: 228px;height: 38px;
 }
 #main a #about_bt{
-    /* margin-top: 112px; */
     border: 0px solid #ed6b6b;
     border-radius: 30px 30px 30px 30px;
     background-color: #ed6b6b;
@@ -142,9 +142,12 @@ width: 228px;height: 38px;
 #main a:active{}
 
 #main #main_arrow{
-    /* display:inline-block; */
-    width: 32px; height: 32px;
-    margin-top: 30px;
+    width:32px;height:32px;margin-top:30px;position:absolute;
+    animation-duration:1s;animation-name:slidein;animation-iteration-count:infinite;animation-direction:alternate
+}
+@keyframes slidein{
+    from{bottom:70px;width:70px}
+    to{bottom:45px;width:70px}
 }
 
 /* ------------main 02 -------------- */
@@ -505,6 +508,18 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 
 
 /* media query */
+/* HP 모니터 */
+@media screen and (min-width:1680px){
+    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:260px;}
+}
+/* 삼성 */
+@media screen and (max-width:1600px){
+    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:240px;}
+}
+/* 15인치 모니터 */
+@media screen and (max-width:1440px){
+    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:200px;}
+}
 /* 13인치 모니터 */
 @media screen and (max-width:1280px){
     header .nav #home img{width:42px;height:42px;}
@@ -534,18 +549,13 @@ span img{display:block;margin-left: auto;margin-right: auto;}
     #a_list_container3{width:100%;}
 }
 
-/* HP 모니터 */
-@media screen and (min-width:1680px){
-    #main_bt_anal #hobby_anal_main #main_yellow_border #hobby_anal_icon #title_icon_back{margin-left:260px;}
-}
-
 /* 갤럭시  s6,노트 4,노트 5 */
-@media screen and (max-width:720px){
+/* @media screen and (max-width:720px){
     html,body{min-width:800px;}
-}
+} */
 
 /* 아이폰 6 */
-@media screen and (max-width:375px){
+@media screen and (max-width:750px){
     /* html,body{min-width:800px;} */
     header .nav{width:91%;padding:35px 10%;}
     header .nav #home img{width:76px;height:70px;}
@@ -580,7 +590,9 @@ span img{display:block;margin-left: auto;margin-right: auto;}
     #hobby_anal_result_bt{width:90%;}
     #hobby_anal_result_bt p{font-size:20px;padding:10px 60px;}
     #hobby_anal_result #hobby_anal_result_top_container{width:90%;}
-    #hobby_anal_result #hobby_anal_result_bottom_container{width:90%;}
+    #hobby_anal_result #hobby_anal_result_bottom_container{width:90%;height:1100px;}
+    #hobby_anal_result #hobby_anal_result_bottom_container #hobby_anal_result_bottom h1{margin-bottom:0;}
+    #a_list_container3{width:90%;margin-left:20px;}
 
     #a_list_container2{width:750px;}
 

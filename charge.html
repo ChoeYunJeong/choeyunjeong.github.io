@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/charge.css"/>
+    <link rel="stylesheet" href="./css/menu.css"/> 
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/respond.min.js"></script>
+    <title>소소한 일탈</title>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div id="home">
+                <a href="index.html"><img src="img/about/home_icon_pink.png"></a>
+            </div>
+            <div id="search">
+                <ul>
+                    <li id="search_t"><input type='text' id='search_text' /></li>
+                    <li id="search_i"><img src="img/search_icon.png" id="search_img"></li>
+                </ul>
+            </div>
+            <div id="menu_container">
+                <div class="btn"><img src="img/menu.png" alt="메뉴" id="btn_img"></div>
+                <div onclick="history.back();" class="page_cover"></div>
+                <div id="menu">
+                    <div onclick="history.back();" class="close"><img src="img/menu_close.png" alt="닫기"></div>
+                    <nav>
+                        <ul>
+                            <li id="nav_alarm"><img src="img/alarm.png" class="s_icon" id="alarm"><span id="alarm_txt">프랑스 자수 클래스 3일 전입니다.</span></li>
+                            <li id="nav_name"><a href="#"><h1>조하영 님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
+                            <li><a href="#">0 포인트 0 보너스</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li class="nav_title">프로젝트 소개</li>
+                            <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
+                            <li class="nav_title">취미 분석</li>
+                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
+                            <li><a href="review.html">후기 게시판</a></li>
+                            <ul class="menu_icon_list_container">
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/charge.png" alt=""></li>
+                                        <li>충전하기</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/reservation.png" alt=""></li>
+                                        <li>예약하기</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul class="menu_icon_list">
+                                        <li><img src="img/customer.png" alt=""></li>
+                                        <li>고객센터</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+<section>
+    <div id="charge">
+        <h1>포인트 충전</h1>
+        <span class="bar">bar</span>
+    </div>
+</section>
+</body>
+</html>
