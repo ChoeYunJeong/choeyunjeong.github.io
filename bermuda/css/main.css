@@ -197,7 +197,7 @@ section{height:100%;-webkit-overflow-scrolling:touch;}
     background-position:center;
     background-size:cover;
 }
-#main_bt_anal #hobby_anal_main{width:70%;height:550px;background:url('../img/hobby_anal02.png')no-repeat;background-size:100% 100%;;margin-left: auto;margin-right:auto;margin-bottom:200px;position:relative;}
+#main_bt_anal #hobby_anal_main{width:70%;min-width:1120px;height:600px;background:url('../img/hobby_anal02.png')no-repeat;background-size:100% 100%;;margin-left: auto;margin-right:auto;margin-bottom:200px;position:relative;}
 /* #main_bt_anal #hobby_anal_main {width:70%;height:70%;border:5px solid #ffd259;margin-left:auto;margin-right:auto;} */
 #main_bt_anal #hobby_anal_main h1{font-size:40px;line-height:48px;margin-top:102px;font-weight:700;}
 #main_bt_anal #hobby_anal_main  p{font-size:20px;line-height:34px;margin-top:30px;}
@@ -241,7 +241,10 @@ section{height:100%;-webkit-overflow-scrolling:touch;}
     margin-top:20px;
 }
 .test_text h3{font-size:24px;line-height:48px;margin-top:30px;margin-bottom:40px;font-weight:500;}
-#main_bt_anal #hobby_anal_test #hobby_anal_test_01{}
+#main_bt_anal #hobby_anal_test #hobby_anal_test_01{min-width:1120px;}
+#main_bt_anal #hobby_anal_test #hobby_anal_test_02{min-width:1120px;}
+#main_bt_anal #hobby_anal_test #hobby_anal_test_03{min-width:1120px;}
+#hobby_anal_result_bt{min-width:1120px;}
 
 #testbox_container{}
 #testbox_container_01{width:192px;margin-left:16%;}
@@ -330,7 +333,7 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
     background-size:cover;padding-top:150px;
 }
 #hobby_anal_result #hobby_anal_result_top_container{
-    width:70%;height:650px;background:url('../img/hobby_anal.png')no-repeat;
+    width:70%;min-width:1120px;height:700px;background:url('../img/hobby_anal.png')no-repeat;
     background-size:100% 100%;
     margin-left:auto;margin-right:auto;position:relative;
 }
@@ -364,7 +367,7 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
 
 #hobby_anal_result #hobby_anal_result_bottom_container{
     background:url('../img/hobby_anal_recommend.png')no-repeat;background-size:100%;
-    /* width:1120px; */
+    /* width:1120px; */min-width:1120px;
     width:70%;
     height:680px;margin-top:150px;position: relative;
     background-color:#fff;margin-left:auto;margin-right:auto;
@@ -378,7 +381,7 @@ input[type="radio"]:not(old):checked+label span{display:inline-block;width:24px;
 #hobby_anal_result_bottom .list .list_box_it .list_text ul li:nth-of-type(2){text-align:left;}
 
 #hobby_anal_result #hobby_anal_result_footer{width:100%;padding-top:100px;padding-bottom:100px;}
-#hobby_anal_result #hobby_anal_result_footer #hobby_anal_result_footer_container{width:70%;margin-left:auto;margin-right:auto;}
+#hobby_anal_result #hobby_anal_result_footer #hobby_anal_result_footer_container{width:70%;min-width:1120px;margin-left:auto;margin-right:auto;}
 #hobby_anal_result #hobby_anal_result_footer #hobby_anal_result_footer_container h6{
     display:inline-block;
     border-radius:20px;font-size:20px;
@@ -425,7 +428,7 @@ span img{display:block;margin-left: auto;margin-right: auto;}
     left:20px;
     /* overflow:hidden; */
 }
-#_list{left:7%;}
+#_list{left:150px}
 #a_list_container2{
     position:relative;
     width:1200px;height:430px;background-color:#fff;
@@ -571,10 +574,6 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 
 
 
-
-
-
-
 /* media query */
 /* HP 모니터 */
 @media screen and (min-width:3360px){
@@ -620,7 +619,6 @@ span img{display:block;margin-left: auto;margin-right: auto;}
 }
 /* 13인치 모니터 */
 @media screen and (max-width:2560px){
-    #_list{left:3%;}
     .btn img{padding-top:12%;}
     header .nav #home img{width:42px;height:42px;}
     .nav #search ul li #search_text{height:32px;}

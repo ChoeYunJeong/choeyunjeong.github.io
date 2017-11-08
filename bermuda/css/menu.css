@@ -152,6 +152,6 @@ html.open{overflow: hidden;}
 }
 
 /* 아이폰 6 */
-@media screen and (max-width:375px){
+@media screen and (max-width:750px){
     #menu{width:100%;right:-100%;}
 }
