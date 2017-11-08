@@ -55,7 +55,7 @@ html.open{overflow: hidden;}
     z-index: 1;
     cursor: pointer;
 }
-.btn img{width:40px;height:40px;padding-top:12%;}
+.btn img{width:40px;height:40px;padding-top:30%;}
   
 .close{
     /* width: 50px;height: 50px; */
@@ -90,6 +90,8 @@ html.open{overflow: hidden;}
 #menu nav ul .menu_icon_list_container .menu_icon_list{margin-left:0;text-align:center;}
 #menu nav ul .menu_icon_list_container .menu_icon_list img{width:40px;height:40px;}
 #menu nav ul .menu_icon_list_container .menu_icon_list li{margin-right:54px;}
+#menu nav ul .menu_icon_list_container .menu_icon_list li a:link{color:#ff8989;}
+#menu nav ul .menu_icon_list_container .menu_icon_list li a:visited{color:#ff8989;}
 #menu nav ul li:nth-of-type(1){font-size:18px;}
 #menu nav ul li:nth-of-type(3){font-size:22px;}
 #menu nav ul li:nth-of-type(4){margin-top:66px;}
@@ -120,8 +122,21 @@ html.open{overflow: hidden;}
 
 
 /* media query */
+/* HP 모니터 */
+@media screen and (min-width:1680px){
+    #menu nav ul .menu_icon_list_container{margin-top:100px;}
+}
+/* 삼성 */
+@media screen and (min-width:1600px){
+    .close{margin-top:40px;margin-right:80px;}
+    #menu nav ul{margin-top:40px;}
+}
+/* 15인치 모니터 */
+@media screen and (max-width:1440px){
+    .close{top:30px;right:60px;}
+}
 /* 13인치 모니터 */
-@media screen and (max-width:1280px){
+@media screen and (max-width:2560px){
     .close{top:4%;right:15%;}
     .close img{width:32px;height:32px;}
 

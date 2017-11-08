@@ -32,14 +32,14 @@
                     <nav>
                         <ul>
                             <li id="nav_alarm"><img src="img/alarm.png" class="s_icon" id="alarm"><span id="alarm_txt">프랑스 자수 클래스 3일 전입니다.</span></li>
-                            <li id="nav_name"><a href="#"><h1>조하영 님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
+                            <li id="nav_name"><a href="#"><h1>손님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
                             <li><a href="#">0 포인트 0 보너스</a></li>
                             <li><a href="#">공지사항</a></li>
                             <li class="nav_title">프로젝트 소개</li>
                             <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
                             <li class="nav_title">취미 분석</li>
-                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
-                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
+                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
                             <li><a href="review.html">후기 게시판</a></li>
                             <ul class="menu_icon_list_container">
                                 <li>
@@ -50,8 +50,8 @@
                                 </li>
                                 <li>
                                     <ul class="menu_icon_list">
-                                        <li><img src="img/reservation.png" alt=""></li>
-                                        <li>예약하기</li>
+                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
+                                        <li><a href="reservation.html">예약현황</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -100,7 +100,7 @@
             <h2>프리미엄 후기<h6>최신순 | 추천순 | 조회순</h6></h2> 
             <div class="bottom_list_container">
                 <h3>NO.110</h3> 
-                <ul class="bottom_list">                                
+                <ul class="bottom_list" id="bottom_list01">                                
                     <li><img src="img/list_box01.png" alt="프랑스 자수"></li>
                     <li>
                         <ul class="bottom_list_text">
@@ -112,6 +112,22 @@
                         </ul>
                     </li>
                 </ul>
+            </div>
+            <div class="layer">
+                <div class="bg"></div>
+                <div id="layer2" class="pop-layer">
+                    <div class="pop-container">
+                        <div class="pop-conts">
+                            <!--content //-->
+                            <div class="btn-r">
+                                <a href="#" class="cbtn"><img src="img/detail_page/popup_close_bt.png" alt="" width="30px" height="30px"></a>
+                            </div>
+                            <div class='popup_review'>
+                                <img src="img/review/popup_review.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="bottom_list_container">   
                 <h3>NO.109</h3>                    
@@ -217,6 +233,35 @@
         </div>
         <div>
         </div>
+        <div id="footer">
+            <div id="option_list" class="center">
+                <ul>
+                    <li><<</li>  
+                    <li><</li>
+                    <li class="black">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>></li>
+                    <li>>></li>
+                </ul>
+            </div>
+            <div id="option" class="center">
+                <ul>
+                    <li>
+                        <SELECT NAME=option SIZE=1>
+                            <OPTION VALUE=1 SELECTED>제목</OPTION>
+                            <OPTION VALUE=2>내용</OPTION>
+                            <OPTION VALUE=3>댓글</OPTION>
+                        </SELECT>
+                    </li>
+                    <li><INPUT TYPE=TEXT NAME=txt1 SIZE=40></li>
+                    <li><button>검색</button></li>
+                </ul>
+            </div>
+        </div>
     </div>
 </section>
 <script>
@@ -231,6 +276,86 @@ $(window).ready(function(){
             $("#menu,.page_cover,html").removeClass("open");
         }
     };
+    // layer-popup
+    $('#bottom_list01').click(function(){
+        $('body').css({'overflow':'hidden'});
+        layer_open('layer2');
+        return false;
+    })
+    function layer_open(el){
+        var temp = $('#' + el);
+        var bg = temp.prev().hasClass('bg');    //dimmed 레이어를 감지하기 위한 boolean 변수
+        var confirm2 = temp.prev().hasClass('confirm2');
+        if(bg){
+            $('.layer').fadeIn();   //'bg' 클래스가 존재하면 레이어가 나타나고 배경은 dimmed 된다.
+        }else{
+            temp.fadeIn();
+        }         
+        // 화면의 중앙에 레이어를 띄운다.
+        if (temp.outerHeight() < $(document).height() ) temp.css('margin-top', '-'+temp.outerHeight()/2+'px');
+            else temp.css('top', '0px');
+        if (temp.outerWidth() < $(document).width() ) temp.css('margin-left', '-'+temp.outerWidth()/2+'px');
+            else temp.css('left', '0px');
+
+        temp.find('a.cbtn').click(function(e){
+            $('section').css({'overflow':''});
+            if(bg){
+                $('.layer').fadeOut(); //'bg' 클래스가 존재하면 레이어를 사라지게 한다.
+                $('body').css({'overflow':''});
+            }else{
+                temp.fadeOut();
+                $('body').css({'overflow':''});
+            }
+            e.preventDefault();
+        });
+
+        temp.find($('.confirm2')).click(function(e){
+            if(bg){
+                $('.layer').fadeOut();
+                $('body').css({'overflow':''});
+            }else{
+                temp.fadeOut();
+                $('body').css({'overflow':''});
+            }
+            e.preventDefault();
+            
+        });
+            
+        $('.layer .bg').click(function(e){  //배경을 클릭하면 레이어를 사라지게 하는 이벤트 핸들러
+            $('.layer').fadeOut();
+            e.preventDefault();
+            $('body').css({'overflow':''});
+        });
+    }   
+            // nav 스르륵
+            var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.nav').outerHeight();
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('.nav').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('.nav').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            lastScrollTop = st;
+        }   
 });
 </script>
 </body>

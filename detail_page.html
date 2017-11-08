@@ -34,14 +34,14 @@
                     <nav>
                         <ul>
                             <li id="nav_alarm"><img src="img/alarm.png" class="s_icon" id="alarm"><span id="alarm_txt">프랑스 자수 클래스 3일 전입니다.</span></li>
-                            <li id="nav_name"><a href="#"><h1>조하영 님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
+                            <li id="nav_name"><a href="#"><h1>손님 <img src="img/mypage_icon.png" alt="mypage" class="s_icon"></h1></a></li>
                             <li><a href="#">0 포인트 0 보너스</a></li>
                             <li><a href="#">공지사항</a></li>
                             <li class="nav_title">프로젝트 소개</li>
                             <li class="nav_sub"><a href="about.html">- ABOUT</a></li>
                             <li class="nav_title">취미 분석</li>
-                            <li class="nav_sub"><a href="#main_02">- 취미 분석</a></li>
-                            <li class="nav_sub"><a href="#myhobby">- 나의 취미</a></li>
+                            <li class="nav_sub"><a href="index.html#main_02">- 취미 분석</a></li>
+                            <li class="nav_sub"><a href="index.html#myhobby">- 나의 취미</a></li>
                             <li><a href="review.html">후기 게시판</a></li>
                             <ul class="menu_icon_list_container">
                                 <li>
@@ -52,8 +52,8 @@
                                 </li>
                                 <li>
                                     <ul class="menu_icon_list">
-                                        <li><img src="img/reservation.png" alt=""></li>
-                                        <li>예약하기</li>
+                                        <li><a href="reservation.html"><img src="img/reservation.png" alt=""></a></li>
+                                        <li><a href="reservation.html">예약현황</a></li>
                                     </ul>
                                 </li>
                                 <li>
@@ -78,7 +78,7 @@
                         <li><h6>#만들기</h6></li>
                         <li><h1>프랑스 자수 배우기</h1></li>
                         <li><span>서울특별시 영등포구 여의도동</span></li>
-                        <li><span>60km</span></li>
+                        <li><span>22km</span></li>
                         <li>평점
                             <ul class="star">
                                 <li>
@@ -109,7 +109,7 @@
                     <div class="pop-conts">
                         <!--content //-->
                         <div class="btn-r">
-                            <a href="#" class="cbtn"><img src="img/detail_page/popup_close_bt.png" alt=""></a>
+                            <a href="#" class="cbtn"><img src="img/detail_page/popup_close_bt.png" alt="" width="30px" height="30px"></a>
                         </div>
                         <div class='wrap'>
                             <div class='btn-holder'>
@@ -121,9 +121,9 @@
                             </div>
                             <div id="calendar"></div>
                         </div>
-                        <div class="wrap2">
+                        <div class="wrap2" style="display:none">
                             <div id="time">
-                                <span class="bar">bar</span><h1>시간</h1>
+                                <span class="bar">bar</span><h1>시간 선택</h1>
                                 <ul id="time_list">
                                     <li>
                                         <ul id="time_listbox01">
@@ -176,24 +176,24 @@
                                 </ul>
                             </div>
                             <div id="amount">
-                                <span class="bar">bar</span><h1>수량</h1>
+                                <span class="bar">bar</span><h1>수량 선택</h1>
                                 <ul>
                                     <li><a href="#" id="minus" class="mi_bt">-</a></li>
                                     <li><span id="number_updown">1</span></li>
                                     <li><a href="" id="plus" class="mi_bt">+</a></li>
                                 </ul>
                                 <div id="amount_bottom">
-                                    <h2>원</h2>
+                                    <h2>20,000원</h2>
                                     <span class="pay">결제</span>
                                 </div>
                             </div>
                         </div>
                         <div class="payment" style="display:none">
-                            <span class="bar">bar</span><h1>결제</h1>
+                            <span class="bar">bar</span><h1>결제 방법 선택</h1>
                             <ul id="payment_list">
                                 <li><input type="radio" name="payment_" id="point"><label for="point"><span></span></label><h3>보유포인트 및 보너스</h3>
                                     <ul id="point_sub">
-                                        <li>0포인트&nbsp;&nbsp;0보너스</li>
+                                        <li>20,000포인트&nbsp;&nbsp;0보너스</li>
                                         <li><span class="point_c">사용</span></li>
                                     </ul>
                                 </li>
@@ -294,7 +294,7 @@
                         <li><img src="img/list_box06.jpg" alt="프랑스 자수" width="229px" height="163px"></li>
                         <li>
                             <ul class="contentbox02_text">
-                                <li>프랑스 자수 배우기</li>
+                                <li>꽃다발 만들기</li>
                                 <li><span>작성자</span> 김희수</li>
                                 <li><span>추천</span> 9</li>
                                 <li><span>조회</span> 11</li>
@@ -305,7 +305,7 @@
                         <li><img src="img/list_box04.png" alt="프랑스 자수"></li>
                         <li>
                             <ul class="contentbox02_text">
-                                <li>프랑스 자수 배우기</li>
+                                <li>도자기 만들기</li>
                                 <li><span>작성자</span> 배윤경</li>
                                 <li><span>추천</span> 3</li>
                                 <li><span>조회</span> 20</li>
@@ -316,7 +316,7 @@
                         <li><img src="img/list_box05.png" alt="프랑스 자수"></li>
                         <li>
                             <ul class="contentbox02_text">
-                                <li>프랑스 자수 배우기</li>
+                                <li>가죽 공방</li>
                                 <li><span>작성자</span> 윤지수</li>
                                 <li><span>추천</span> 30</li>
                                 <li><span>조회</span> 50</li>
@@ -583,6 +583,26 @@ $(window).ready(function(){
 
         temp.find('a.cbtn').click(function(e){
             $('section').css({'overflow':''});
+            $('.wrap').css({'display':''});
+            $('.wrap2').css({'display':'none'});
+            $('.payment').css({'display':'none'});
+            $('.last_payment').css({'display':'none'});
+            $('#payment_bottom').find('h2').html('20,000원');
+            $('td').removeClass('calendar_c');
+            $('.choice').removeClass('check');
+            $('.point_c').css({'border':'3px solid #d7d7d7','color':'#d7d7d7','background-color':'transparent'});
+            $("input:radio[name='payment_']").prop('checked',false);
+            var checkcount = 0;
+            $('.circle_date').click(function(){
+                var $td = $(this);
+                $td.addClass('calendar_c');
+                checkcount++;
+                if(checkcount === 3){
+                    $('.wrap2').css({'display':''});
+                    $('.wrap').css({'display':'none'});
+                    $('.payment').css({'display':'none'});
+                }
+            })        
             if(bg){
                 $('.layer').fadeOut(); //'bg' 클래스가 존재하면 레이어를 사라지게 한다.
             }else{
@@ -595,6 +615,26 @@ $(window).ready(function(){
             if(bg){
                 $('.layer').fadeOut();
                 $('section').css({'overflow':''});
+                $('.wrap').css({'display':''});
+                $('.wrap2').css({'display':'none'});
+                $('.payment').css({'display':'none'});
+                $('.last_payment').css({'display':'none'});
+                $('#payment_bottom').find('h2').html('20,000원');
+                $('td').removeClass('calendar_c');
+                $('.choice').removeClass('check');
+                $('.point_c').css({'border':'3px solid #d7d7d7','color':'#d7d7d7','background-color':'transparent'});
+                $("input:radio[name='payment_']").prop('checked',false);
+                var checkcount = 0;
+                $('.circle_date').click(function(){
+                    var $td = $(this);
+                    $td.addClass('calendar_c');
+                    checkcount++;
+                    if(checkcount === 3){
+                        $('.wrap2').css({'display':''});
+                        $('.wrap').css({'display':'none'});
+                        $('.payment').css({'display':'none'});
+                    }
+            })    
             }else{
                 temp.fadeOut();
                 $('section').css({'overflow':''});
@@ -606,6 +646,26 @@ $(window).ready(function(){
             $('.layer').fadeOut();
             e.preventDefault();
             $('section').css({'overflow':''});
+            $('.wrap').css({'display':''});
+            $('.wrap2').css({'display':'none'});
+            $('.payment').css({'display':'none'});
+            $('.last_payment').css({'display':'none'});
+            $('#payment_bottom').find('h2').html('20,000원');
+            $('td').removeClass('calendar_c');
+            $('.choice').removeClass('check');
+            $('.point_c').css({'border':'3px solid #d7d7d7','color':'#d7d7d7','background-color':'transparent'});
+            $("input:radio[name='payment_']").prop('checked',false);
+            var checkcount = 0;
+            $('.circle_date').click(function(){
+                var $td = $(this);
+                $td.addClass('calendar_c');
+                checkcount++;
+                if(checkcount === 3){
+                    $('.wrap2').css({'display':''});
+                    $('.wrap').css({'display':'none'});
+                    $('.payment').css({'display':'none'});
+                }
+            })        
         });
     }             
 
@@ -719,52 +779,6 @@ $(window).ready(function(){
             // $('#'+id).addClass('selected');
         }
     });
-    
-    // var listbox01 = 20000;
-    // var listbox02 = 50000;
-    // var listbox03 = 60000;
-
-    // if($('#product_listbox01').find('.choice').hasClass('check')){
-    //     var num = 20000;
-    //     $('#minus').click(function(e){
-    //         e.preventDefault();
-    //         // var stat = $('#number_updown').text();
-    //         var push = $('#amount_bottom').children('h2').text();
-    //         // var num = parseInt(push,10);
-    //         num--;
-    //         if(num<=0){
-    //             alert('더이상 줄일수 없습니다.');
-    //         num =1;
-    //         }
-    //         $('#amount_bottom').children('h2').text(num);
-    //         // $('#number_updown').text(num);
-    //     });
-    //     $('#plus').click(function(e){
-    //         e.preventDefault();
-    //         // var stat = $('#number_updown').text();
-    //         var push = $('#amount_bottom').children('h2').text();
-    //         // var num = parseInt(stat,10);
-    //         num++;
-
-    //         if(num>10){
-    //             alert('더이상 늘릴수 없습니다.');
-    //             num=10;
-    //         }
-    //         $('#amount_bottom').children('h2').text(num);
-    //         // $('#number_updown').text(num);
-    //     });
-    // }
-
-
-
-    // $('#product_listbox01').children('span') = 20000;
-    // $('#product_listbox01').children('span').hasClass('check') = 20000;
-    // $('#product_listbox02').children('span').hasClass('check') = 50000;
-    // $('#product_listbox03').children('span').hasClass('check') = 60000;
-    // console.log($('#product_listbox01').children('span'));
-    // $('#amount_bottom').children('h2').push('')
-
-
 
     // $(function(){
         $('#minus').click(function(e){
@@ -791,50 +805,107 @@ $(window).ready(function(){
             $('#number_updown').text(num);
         });
     // });
+    
+    $('tbody tr:nth-of-type(4) td:nth-of-type(2)').addClass('circle_date');
+    $('tbody tr:nth-of-type(4) td:nth-of-type(4)').addClass('circle_date');
+    $('tbody tr:nth-of-type(4) td:nth-of-type(6)').addClass('circle_date');
 
-    // 결제
-    $('.pay').click(function(){
-        $('.wrap').css({'display':'none'});
-        $('.wrap2').css({'display':'none'});
-        $('.payment').css({'display':''});
-    });
-    $('.pay2').click(function(){
-        $('.payment').css({'display':'none'});
-        $('.last_payment').css({'display':''});
-    });
 
-    // 하트 클릭시
-    $('#heart').click(function(){
-        if($(this).attr('src') === 'img/detail_page/heart_f.png'){
-            $('#heart').attr('src','img/detail_page/heart.png');
-        }else{
-            $('#heart').attr('src','img/detail_page/heart_f.png');
-        // }
+    // 달력 클릭시 넘어가기
+    var checkcount = 0;
+    $('.circle_date').click(function(){
+        var $td = $(this);
+        $td.addClass('calendar_c');
+        checkcount++;
+        if(checkcount === 3){
+            $('.wrap2').css({'display':''});
+            $('.wrap').css({'display':'none'});
+            $('.payment').css({'display':'none'});
         }
-    });
+    })
+    
+    
+        // 결제
+        $('.pay').click(function(){
+            $('.wrap').css({'display':'none'});
+            $('.wrap2').css({'display':'none'});
+            $('.payment').css({'display':''});
+        });
+        $('.pay2').click(function(){
+            $('.payment').css({'display':'none'});
+            $('.last_payment').css({'display':''});
+        });
+    
+        // 하트 클릭시
+        $('#heart').click(function(){
+            if($(this).attr('src') === 'img/detail_page/heart_f.png'){
+                $('#heart').attr('src','img/detail_page/heart.png');
+            }else{
+                $('#heart').attr('src','img/detail_page/heart_f.png');
+            // }
+            }
+        });
+    
+        // 리뷰
+        $('#review').click(function(){
+            $('#detail_img').css({'display':'none'});
+            $('#detail_review').css({'display':''});
+            $('#detail_question').css({'display':'none'});
+            $('div').css({'height':''});
+        });
+    
+        // 클래스 소개
+        $('#intro').click(function(){
+            $('#detail_review').css({'display':'none'});
+            $('#detail_img').css({'display':''});
+            $('#detail_question').css({'display':'none'});
+        });
+    
+        // Q&A
+        $('#question').click(function(){
+            $('#detail_img').css({'display':'none'});
+            $('#detail_review').css({'display':'none'});
+            $('#detail_question').css({'display':''});
+            $('div').css({'height':''});
+        });
+        $('#point').click(function(){
+            if($('input:radio[name=payment_]').is(':checked')){
+                $('.point_c').css({'background-color':'#ed6b6b','color':'#fff','border':'3px solid #ed6b6b'});
+            }
+        });
+        $('.point_c').click(function(){
+            $('#payment_bottom').find('h2').html('0원');
+        })
 
-    // 리뷰
-    $('#review').click(function(){
-        $('#detail_img').css({'display':'none'});
-        $('#detail_review').css({'display':''});
-        $('#detail_question').css({'display':'none'});
-        $('div').css({'height':''});
-    });
-
-    // 클래스 소개
-    $('#intro').click(function(){
-        $('#detail_review').css({'display':'none'});
-        $('#detail_img').css({'display':''});
-        $('#detail_question').css({'display':'none'});
-    });
-
-    // Q&A
-    $('#question').click(function(){
-        $('#detail_img').css({'display':'none'});
-        $('#detail_review').css({'display':'none'});
-        $('#detail_question').css({'display':''});
-        $('div').css({'height':''});
-    });
+        // nav 스르륵
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 5;
+        var navbarHeight = $('.nav').outerHeight();
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('.nav').removeClass('nav-down').addClass('nav-up');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('.nav').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+            lastScrollTop = st;
+        }   
 
 });
     </script>
