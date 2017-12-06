@@ -1,0 +1,13 @@
+/* .floater{float:left;margin-bottom:-210px;height:50%;} */
+.player{
+    padding-top:130px;
+    /* clear:both; */
+    /* height:420px;	 */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+	align-items: center;}
+html,body{height:100%}
+section{height:100%;}
+section #section_body{background-color:#141c22;height:100%}
+section #section_body h1{position:fixed;z-index:90;font-size: 50px;margin-top: 50px;margin-left: 50px;margin-bottom: 50px;}
