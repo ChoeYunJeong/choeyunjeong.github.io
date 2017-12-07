@@ -37,14 +37,15 @@ html{font-family: 'Open Sans', sans-serif;font-weight: 600;}
     border: 1px solid #c9c9c9;
     background-color: rgba(255,255,255,0.95);
     text-align: center;
-    transition: All 0.2s ease;
+    /* transition: All 0.2s ease; */
     -webkit-transition: All 0.2s ease;
     -moz-transition: All 0.2s ease;
     -o-transition: All 0.2s ease;
+    transition: All 0.2s ease;
 }
 #menu nav{}
 #menu nav ul{text-align: left;font-size: 40px;margin-top: 200px;margin-left: 50px;}
-#menu nav ul li{margin-top: 30px;}
+#menu nav ul li{margin-top: 50px;}
 #menu nav ul li a,a:visited,a:hover,a:active{position:relative;-webkit-backface-visibility:hidden;backface-visibility:hidden;}
 #menu nav ul li a.after:after{
     content: "";

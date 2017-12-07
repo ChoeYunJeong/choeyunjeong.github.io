@@ -20,7 +20,6 @@
             _cuId = 0;
             _exId = _cuId;
             _max = $bannerItem.length;
-            //_bannerW = $banner.width();
             _isAni = false;
             paddleCheck();
         };
@@ -47,14 +46,8 @@
                 imgW = Math.round(imgH * oW / oH);
             }
             imgT = Math.round(_bannerH / 2 - imgH / 2); //1000.001212121...
-            //1000.001212121... 반올림. Math.round - 1000.531231 = 1001, 1000.312312 - 1000
-            //Math.floor - 내림 : 1000.56328423 -> 1000
-            //Math.ceil - 올림 : 1000.12121 -> 1001
-            //Math.abs - 절대값 : -1000 > 1000
             imgL = Math.round(_bannerW / 2 - imgW / 2);
             $bannerItemImageEl.width(imgW).height(imgH).css({'margin-top':imgT,'margin-left':imgL});
-            // $bannerContainer.width(_bannerW * _max);
-            // $bannerItem.width(_bannerW);
             slide(true);
         };
         var onClickPaddleNav = function(e){
@@ -85,7 +78,6 @@
                 duration = 200 + Math.abs(_exId - _cuId) * 200;
                 $bannerContainer.stop(true).animate({'left' : left}, duration, function(){
                     paddleCheck();
-                    // dotCheck();
                     _exId = _cuId;
                     _isAni = false;
                 });
