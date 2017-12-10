@@ -40,7 +40,6 @@ b{font-weight:500;}
     flex-direction: row;
     justify-content: center;
     align-items: center; */
-/* .article{height: 100px;position: relative;} */
 .article{
     width:100%;z-index:98;
     position: absolute;bottom:0;
@@ -48,7 +47,7 @@ b{font-weight:500;}
     height:20%;font-size:40px;
 }
 .article #left{background-color:#22303a;width:50%;height:100%;}
-.article #right{background-color:#141c22; width: 50%; height: 100%}
+.article #right{background-color:#141c22;width:50%;height: 100%}
 
 .article #left #p_button{height: 100%;
     display: flex;

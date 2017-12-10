@@ -63,23 +63,35 @@ section{height:100%;}
     flex-direction: row;
     justify-content: center;
 	align-items: center;
-	background-repeat: no-repeat;
-    background-position:center;
-    background-attachment:fixed;
-    background-position:0 0;
 	/* background-size:cover; */
 }
 #section_body .poster_left_container img{width:350px;height:500px;margin-left: 50px;}
 .guide{position:absolute;z-index:99;bottom:0;left:20%;font-size:18px;font-weight:300;height:20px;padding-top:5px;padding-bottom:5px;margin-bottom:20px;width:140px;border:2px solid #141c22;text-align:center}
 .list-number{font-size:14px;color:rgb(94, 94, 94);}
 
-/* #two{
+/* #one{
+	background:url('../img/poster/01_the man.jpg');
+}
+#two{
 	background:url('../img/poster/02_the shinning.jpg');
 }
 #three{
 	background:url('../img/poster/03_vertigo.jpg');
+	background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-position:-50% 50%;
+}
+#four{
+	background:url('../img/poster/04_anatomy.jpg');
+	background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    background-position:-50% 50%;
+}
+#five{
+	background:url('../img/poster/05_the big.png');
 } */
-
 
 /* poster_right_container */
 #section_body .poster_right_container{width:50%;float:right;background-color:#141c22;height: 100%;}

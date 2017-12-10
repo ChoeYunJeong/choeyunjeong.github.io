@@ -14,7 +14,7 @@ html,body{
 .main_{position:absolute;font-family:'Open Sans', sans-serif;color:white;}
 .main_ h1{font-size:100px;margin-top:10%;margin-left:50px;}
 .main_ p{margin-left:50px;font-size:20px;font-weight:400;margin-top:10px;}
-.bar{width:130px;height:18px;background-color:#fff;position:absolute;z-index:50;top:60%;}
+.bar{width:130px;height:24px;background-color:#fff;position:absolute;z-index:50;top:58%;}
 .long{top:65%;width:160px}
 .right{right:0;top:45%}
 .right-long{right:0;top:50%;width:180px;}
