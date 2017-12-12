@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>NOVELTY</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script>
+        $(document).ready(function($) {
+            $(".scroll").click(function(event){            
+                event.preventDefault();
+                $('html,body').animate({scrollTop:$(this.hash).offset().top}, 900);
+            });
+
+            var $barEl = $('.bar b');
+            $barEl.on('mouseenter', function(e){
+                var $el = $(this), id = $el.data('id');
+                $el.addClass('selected');
+                $('#'+id).addClass('selected');
+            });
+
+            $('.column-left').hide();
+            $('.column-right').hide();
+            $(function () {
+                $(window).scroll(function () {
+                    if ($(this).scrollTop() > 2100) {
+                        $('.column-left').fadeIn();
+                    } else {
+                        $('.column-left').fadeOut();
+                    }
+                    if ($(this).scrollTop() > 2307) {
+                        $('.column-right').fadeIn();
+                    } else {
+                        $('.column-right').fadeOut();
+                    }
+                });
+ 
+
+                $('.column-left').scroll(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 13000);
+                });
+                $('.column-right').click(function () {
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 13000);
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+   <div id="main" class="container">
+       <div class="component">
+           <div class="table-container">
+               <div class="title">
+                   <p>P R O J E C T</p>
+                   <h1>N O V E L T Y</h1>
+               </div>
+               <div class="line">&nbsp;</div>
+               <div class="figure"><img src="img/header_main.png" alt="website"></div>
+               <a href="#about" class="scroll"><img src="img/header_arrow.png" alt="화살표"></a>
+           </div>
+       </div>
+   </div>
+    <section id="about" class="container">
+        <div class="component">
+            <h1 class="title">ABOUT -</h1>
+            <ul>
+                <li id="first">ONLY ONE</li>
+                <li id="second">BETTER</li>
+                <li id="third">DONATE</li>
+            </ul>
+            <p>
+                노벨티 프로젝트는 자신만의 것을 찾는 젊은 사람들의 소비습관과 매년 심해지고 있는 환경 문제를 연결하여<br />
+                못 입는 옷을 가방으로 재생산 하고 판매 해 수익금 중 10%를 기부하는 친환경적 업사이클링 프로젝트 입니다<br />
+                NOVELTY는 ‘새로운’, ‘참신함’ 이라는 의미를 가지고 있으며, 더 나은 가치를 추구하고자 합니다. 하나밖에 없는,<br />
+                자신만의 새로운 가방을 만나보세요.
+            </p>
+        </div>
+    </section>
+    <section id="process" class="container">
+        <div class="component">
+            <h1 class="title">PROCESS -</h1>
+            <div class="process-step">
+                <div class="step">
+                    <div id="step-1" class="step-item _b_">
+                        <div class="title">STEP-01</div>
+                        <div class="desc">안입는 옷이나 버릴 의류를<br />상자에 담아 택배로 보낸다.</div>
+                    </div>
+                    <div id="step-2" class="step-item _t_">
+                        <div class="title">STEP-02</div>
+                        <div class="desc">택배로 보낸 옷들마다 등급을<br />책정해 포인트로 지급한다.</div>
+                    </div>
+                    <div id="step-3" class="step-item _b_">
+                        <div class="title">STEP-03</div>
+                        <div class="desc">적립된 포인트를 사용하여<br />만들어진 가방을 구매한다.</div>
+                    </div>
+                    <div id="step-4" class="step-item _t_">
+                        <div class="title">STEP-04</div>
+                        <div class="desc">구매 금액 중 10%는 환경재단에<br />기부되며, 기부 증서를 받을 수 있다.</div>
+                    </div>
+                </div>
+                <div class="bar">
+                    <span class="line">&nbsp;</span>
+                    <ul><li><b id="c-1" data-id="step-1">&nbsp;</b></li><li><b id="c-2" data-id="step-2">&nbsp;</b></li><li><b id="c-3" data-id="step-3">&nbsp;</b></li><li><b id="c-4" data-id="step-4">&nbsp;</b></li></ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="web" class="container">
+        <div id="deco-y" class="deco">&nbsp;</div>
+        <div id="deco-b" class="deco">&nbsp;</div>
+        <div id="deco-p" class="deco">&nbsp;</div>
+        <div class="component">
+            <h1 class="title">WEB -</h1>
+            <ul class="column-left">
+                <li><img src="img/web_img1.jpg" alt="website"></li>
+                <li><img src="img/web_img1-1.jpg" alt="website"></li>
+                <li><img src="img/web_img1-2.jpg" alt="website"></li>
+            </ul>
+            <ul class="column-right">
+                <li><img src="img/web_img2.jpg" alt="website"></li>
+                <li><img src="img/web_img2-1.jpg" alt="website"></li>
+            </ul>
+        </div>
+    </section>
+    <section id="video" class="container">
+        <div class="component">
+            <h1 class="title">VIDEO -</h1>
+            <video src="video/novelty.mp4" width  ="900" height="500" controls="controls"></video>
+       </div>
+    </section>
+    <section id="footer" class="container">
+        <div class="component">
+            <div class="table-container">
+                <h1>PROJECT STUDIO<br />TEAM _ C J</h1>
+                <div class="makers">
+                    <dl class="left">
+                        <dt>
+                            PLANNING<br />
+                            & DESIGN
+                        </dt>
+                        <dd><img src="img/footer_img1.png" alt="img1" class="hvr-float"><span>circle</span></dd>
+                        <dd>Ha Yeong Jo</dd>
+                        <dd>
+                            memory1129@naver.com<br />
+                            010-5100-8747
+                        </dd>
+                    </dl>
+                    <dl class="right">
+                        <dt>
+                            PROGRAMING &<br />
+                            VIDEO DIRECTING
+                        </dt>
+                        <dd><img src="img/footer_img2.png" alt="img2" class="hvr-float"><span>circle</span></dd>
+                        <dd>Yun Jeong Choe</dd>
+                        <dd>
+                            08jon@naver.com<br />
+                            010-5447-6861
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
